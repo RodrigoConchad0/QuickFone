@@ -1,43 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Reparação de telemoveis</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
-
+    <title>Document</title>
+    <?php include('includes/linkscss.php') /* pode ser require */?>
 </head>
 <body>
-   
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
-        <div class="container-fluid">
-    
-            
-            <a class="navbar-brand" href="#"><img class="float-start w-25"src="imagens/logo.png" alt=""></a>
-    
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#nav-menu">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-    
-            <div class="collapse navbar-collapse" id="nav-menu">
-                <div class="navbar-nav nav-underline ms-auto">
-                    <a href="#" class="nav-link"> Opção 1 </a>
-                    <a href="#" class="nav-link"> Opção 2 </a>
-    
-                </div>
-            </div>
-        
-            <button type="button" class="btn">
-                <i class="bi bi-virus">   </a> </i>
-            </button>
-    
-        </div>
-        
-    </nav>
-    
+    <!-- Menu --->
+    <?php require('includes/menu.php') ?>
 
     <section class="services py-5">
         <div class="container text-center">
@@ -89,24 +60,8 @@
         </div>
     </section>
 
-    <section class="testimonials py-5 bg-light">
-        <div class="container text-center">
-            <h2>Duarte é gay</h2>
-        
-        </div>
-    </section>
+<!-- Rodape -->
+<?php require('includes/radape.php') ?>
 
-    <footer class="footer py-4 bg-light">
-        <div class="container text-center">
-            <p>&copy; teste </p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/" class="me-3">Facebook</a>
-                <a href="https://x.com/X" class="me-3">Twitter</a>
-                <a href="https://www.instagram.com/minorcs__/">Instagram</a>
-            </div>
-        </div>
-    </footer>
-
-   
 </body>
 </html>
