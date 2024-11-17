@@ -15,46 +15,58 @@
             <h2 class="mb-4">Escolha o dispositivo que pretende reparar</h2>
             <div class="row">
                 <div class="col-md-2">
+                <a href="Iphone.php" class="text-decoration-none" style="color: black;" >
                     <div class="service-item p-4 bg-light rounded">
                         <img class="img-thumbnail" src="imagens/iphone.png" alt="Iphone">
                         <h3>Iphone</h3>
                         
                     </div>
+                </a>
                 </div>
                 <div class="col-md-2">
+                <a href="Samesung.php" class="text-decoration-none" style="color: black;" >
                     <div class="service-item p-4 bg-light rounded">
                         <img class="img-thumbnail" src="imagens/samesung.webp" alt="Samsung">
                         <h3> Samsung </h3>
                         
                     </div>
+                </a>
                 </div>
                 <div class="col-md-2">
+                <a href="Hawei.php" class="text-decoration-none" style="color: black;" >
                     <div class="service-item p-4 bg-light rounded">
                         <img class="img-thumbnail" src="imagens/hawei.png" alt="Hawei">
                         <h3>Hawei</h3>
                         
                     </div>
+                </a>
                 </div>
                 <div class="col-md-2">
+                <a href="Xiomi.php" class="text-decoration-none" style="color: black;" >
                     <div class="service-item p-4 bg-light rounded">
                         <img class="img-thumbnail" src="imagens/xiomi.png" alt="Xiomi">
                         <h3>Xiaomi</h3>
                         
                     </div>
+                </a>
                 </div>
                 <div class="col-md-2">
+                <a href="Oppo.php" class="text-decoration-none" style="color: black;" >
                     <div class="service-item p-4 bg-light rounded">
                         <img class="img-thumbnail" src="imagens/oppo.webp" alt="Oppo">
                         <h3>Oppo</h3>
                         
                     </div>
+                </a>
                 </div>
                 <div class="col-md-2">
+                <a href="Outros.php" class="text-decoration-none" style="color: black;" >
                     <div class="service-item p-4 bg-light rounded">
                         <img class="img-thumbnail" src="imagens/lupa.png" alt="Xiomi">
                         <h3>Outros</h3>
                         
                     </div>
+                </a>
                 </div>
             </div>
         </div>
