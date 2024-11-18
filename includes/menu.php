@@ -2,7 +2,7 @@
         <div class="container-fluid">
     
             
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.php">
             <div class="col-2">  
             <img class="float-start w-50 "src="imagens/logo.png" alt="">
             </div>  

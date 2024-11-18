@@ -10,67 +10,67 @@
     <!-- Menu --->
     <?php require('includes/menu.php') ?>
 
-    <section class="services py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">Escolha o dispositivo que pretende reparar</h2>
-            <div class="row">
-                <div class="col-md-2">
-                <a href="Iphone.php" class="text-decoration-none" style="color: black;" >
-                    <div class="service-item p-4 bg-light rounded">
-                        <img class="img-thumbnail" src="imagens/iphone.png" alt="Iphone">
-                        <h3>Iphone</h3>
-                        
+<section class="services py-5">
+    <div class="container text-center">
+        <div class="row">
+            <!-- Iphone -->
+            <div class="col-md-2">
+                <a href="Iphone.php" class="text-decoration-none" style="color: black;">
+                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
+                        <img class="img-fluid mb-1" src="imagens/iphone.png" alt="Iphone" style="max-width: 120px; max-height: 120px;">
+                        <h3 class="h6 text-center mt-1">Iphone</h3>
                     </div>
                 </a>
-                </div>
-                <div class="col-md-2">
-                <a href="Samesung.php" class="text-decoration-none" style="color: black;" >
-                    <div class="service-item p-4 bg-light rounded">
-                        <img class="img-thumbnail" src="imagens/samesung.webp" alt="Samsung">
-                        <h3> Samsung </h3>
-                        
+            </div>
+            <!-- Samesung -->
+            <div class="col-md-2">
+                <a href="Samesung.php" class="text-decoration-none" style="color: black;">
+                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
+                        <img class="img-fluid mb-1" src="imagens/samesung.webp" alt="Samsung" style="max-width: 120px; max-height: 120px;">
+                        <h3 class="h6 text-center mt-1">Samesung</h3>
                     </div>
                 </a>
-                </div>
-                <div class="col-md-2">
-                <a href="Hawei.php" class="text-decoration-none" style="color: black;" >
-                    <div class="service-item p-4 bg-light rounded">
-                        <img class="img-thumbnail" src="imagens/hawei.png" alt="Hawei">
-                        <h3>Hawei</h3>
-                        
+            </div>
+            <!-- Hawei -->
+            <div class="col-md-2">
+                <a href="Hawei.php" class="text-decoration-none" style="color: black;">
+                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
+                        <img class="img-fluid mb-1" src="imagens/hawei.png" alt="Hawei" style="max-width: 120px; max-height: 120px;">
+                        <h3 class="h6 text-center mt-1">Hawei</h3>
                     </div>
                 </a>
-                </div>
-                <div class="col-md-2">
-                <a href="Xiomi.php" class="text-decoration-none" style="color: black;" >
-                    <div class="service-item p-4 bg-light rounded">
-                        <img class="img-thumbnail" src="imagens/xiomi.png" alt="Xiomi">
-                        <h3>Xiaomi</h3>
-                        
+            </div>
+            <!-- Xiaomi -->
+            <div class="col-md-2">
+                <a href="Xiaomi.php" class="text-decoration-none" style="color: black;">
+                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
+                        <img class="img-fluid mb-1" src="imagens/xiomi.png" alt="Xiomi" style="max-width: 120px; max-height: 120px;">
+                        <h3 class="h6 text-center mt-1">Xiaomi</h3>
                     </div>
                 </a>
-                </div>
-                <div class="col-md-2">
-                <a href="Oppo.php" class="text-decoration-none" style="color: black;" >
-                    <div class="service-item p-4 bg-light rounded">
-                        <img class="img-thumbnail" src="imagens/oppo.webp" alt="Oppo">
-                        <h3>Oppo</h3>
-                        
+            </div>
+            <!-- Oppo -->
+            <div class="col-md-2">
+                <a href="Oppo.php" class="text-decoration-none" style="color: black;">
+                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
+                        <img class="img-fluid mb-1" src="imagens/oppo.webp" alt="Oppo" style="max-width: 120px; max-height: 120px;">
+                        <h3 class="h6 text-center mt-1">Oppo</h3>
                     </div>
                 </a>
-                </div>
-                <div class="col-md-2">
-                <a href="Outros.php" class="text-decoration-none" style="color: black;" >
-                    <div class="service-item p-4 bg-light rounded">
-                        <img class="img-thumbnail" src="imagens/lupa.png" alt="Xiomi">
-                        <h3>Outros</h3>
-                        
+            </div>
+            <!-- Procurar -->
+            <div class="col-md-2">
+                <a href="" class="text-decoration-none" style="color: black;">
+                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
+                        <img class="img-fluid mb-1" src="imagens/lupa.png" alt="Lupa" style="max-width: 120px; max-height: 120px;">
+                        <h3 class="h6 text-center mt-1">Procurar</h3>
                     </div>
                 </a>
-                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
 <!-- Rodape -->
 <?php require('includes/radape.php') ?>
