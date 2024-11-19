@@ -16,7 +16,7 @@
         <div class="row">
 
             <div class="col-md-2">
-                <a href="Iphone.php" class="text-decoration-none" style="color: black;">
+                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         
                     </div>
@@ -24,7 +24,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="Samesung.php" class="text-decoration-none" style="color: black;">
+                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                        
                     </div>
@@ -32,7 +32,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="Hawei.php" class="text-decoration-none" style="color: black;">
+                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                        
                     </div>
@@ -40,7 +40,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="Xiomi.php" class="text-decoration-none" style="color: black;">
+                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                      
                     </div>
@@ -48,7 +48,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="Oppo.php" class="text-decoration-none" style="color: black;">
+                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                        
                     </div>
@@ -56,7 +56,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="Outros.php" class="text-decoration-none" style="color: black;">
+                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                        
                     </div>
@@ -71,7 +71,7 @@
         <div class="row">
 
             <div class="col-md-2">
-                <a href="Iphone.php" class="text-decoration-none" style="color: black;">
+                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         
                     </div>
@@ -79,7 +79,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="Samesung.php" class="text-decoration-none" style="color: black;">
+                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                        
                     </div>
@@ -87,7 +87,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="Hawei.php" class="text-decoration-none" style="color: black;">
+                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         
                     </div>
@@ -95,7 +95,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="Xiomi.php" class="text-decoration-none" style="color: black;">
+                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         
                     </div>
@@ -103,7 +103,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="Oppo.php" class="text-decoration-none" style="color: black;">
+                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         
                     </div>
@@ -111,7 +111,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="Outros.php" class="text-decoration-none" style="color: black;">
+                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         
                     </div>

@@ -1,5 +1,8 @@
-<footer class="bg-dark text-white pt-4">
-    <div class="container">
+
+
+<footer class="bg-dark text-white pt-4 mt-auto" style="width: 100%; position: relative;">
+
+    <div class="container ">
         <div class="row">
 
             <div class="col-md-3 mb-4">
@@ -11,8 +14,6 @@
                 </ul>
             </div>
 
-            <!-- Coluna 1: Sobre -->
-            
             <!-- Coluna 2: Links Úteis -->
             <div class="col-md-3 mb-4">
                 <h5>Avaliações</h5>
