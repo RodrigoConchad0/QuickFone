@@ -16,7 +16,7 @@
             
             <!-- Iphone -->
             <div class="col-md-2">
-                <a href="Iphone.php" class="text-decoration-none" style="color: black;">
+                <a href="telemoveis\Iphone.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         <img class="img-fluid mb-1" src="imagens/iphone.png" alt="Iphone" style="max-width: 120px; max-height: 120px;">
                         <h3 class="h6 text-center mt-1">Iphone</h3>
@@ -25,7 +25,7 @@
             </div>
             <!-- Samesung -->
             <div class="col-md-2">
-                <a href="Samesung.php" class="text-decoration-none" style="color: black;">
+                <a href="telemoveis\Samesung.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         <img class="img-fluid mb-1" src="imagens/samesung.webp" alt="Samsung" style="max-width: 120px; max-height: 120px;">
                         <h3 class="h6 text-center mt-1">Samesung</h3>
@@ -34,7 +34,7 @@
             </div>
             <!-- Hawei -->
             <div class="col-md-2">
-                <a href="Hawei.php" class="text-decoration-none" style="color: black;">
+                <a href="telemoveis\Hawei.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         <img class="img-fluid mb-1" src="imagens/hawei.png" alt="Hawei" style="max-width: 120px; max-height: 120px;">
                         <h3 class="h6 text-center mt-1">Hawei</h3>
@@ -43,7 +43,7 @@
             </div>
             <!-- Xiaomi -->
             <div class="col-md-2">
-                <a href="Xiaomi.php" class="text-decoration-none" style="color: black;">
+                <a href="telemoveis\Xiaomi.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         <img class="img-fluid mb-1" src="imagens/xiomi.png" alt="Xiomi" style="max-width: 120px; max-height: 120px;">
                         <h3 class="h6 text-center mt-1">Xiaomi</h3>
@@ -52,7 +52,7 @@
             </div>
             <!-- Oppo -->
             <div class="col-md-2">
-                <a href="Oppo.php" class="text-decoration-none" style="color: black;">
+                <a href="telemoveis\Oppo.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         <img class="img-fluid mb-1" src="imagens/oppo.webp" alt="Oppo" style="max-width: 120px; max-height: 120px;">
                         <h3 class="h6 text-center mt-1">Oppo</h3>

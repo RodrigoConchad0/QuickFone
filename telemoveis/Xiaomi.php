@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php include('includes/linkscss.php') /* pode ser require */?>
+    <?php include('includes/linkscss.php') ?>
 </head>
 <body>
-<!-- Menu --->
-<?php require('includes/menu.php') ?>
+    <!-- Menu --->
+    <?php require('includes/menu.php') ?>
+    
 
 <section class="services py-5">
     <div class="container text-center">
         <div class="row">
 
             <div class="col-md-2">
-                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         
                     </div>
@@ -23,7 +24,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                        
                     </div>
@@ -31,7 +32,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                        
                     </div>
@@ -39,7 +40,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                      
                     </div>
@@ -47,7 +48,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                        
                     </div>
@@ -55,7 +56,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                        
                     </div>
@@ -70,7 +71,7 @@
         <div class="row">
 
             <div class="col-md-2">
-                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         
                     </div>
@@ -78,7 +79,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                        
                     </div>
@@ -86,7 +87,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         
                     </div>
@@ -94,7 +95,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         
                     </div>
@@ -102,7 +103,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         
                     </div>
@@ -110,7 +111,7 @@
             </div>
 
             <div class="col-md-2">
-                <a href="tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
                         
                     </div>
@@ -120,8 +121,7 @@
     </div>
 </section>
 
-
-<!-- Rodape -->
-<?php require('includes/radape.php') ?>
+    <!-- Rodape -->
+    <?php require('includes/radape.php') ?>
 </body>
 </html>
