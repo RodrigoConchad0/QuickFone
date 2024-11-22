@@ -4,124 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php include('includes/linkscss.php') /* pode ser require */?>
+    <?php include('../includes/linkscss.php') /* pode ser require */?>
 </head>
-<body>
+<body style="margin-top: 100px;">
 <!-- Menu --->
-<?php require('includes/menu.php') ?>
+<?php require('../includes/menu.php') ?>
 
-<section class="services py-5">
-    <div class="container text-center">
+
+<div class="container text-center" style="margin-bottom: 150px;">
         <div class="row">
-
-            <div class="col-md-2">
+       
+            
+            <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                        
+                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="" alt="" style="width: 300px; height: 300px;">
+                        <h3 class="h6 text-center mt-1"></h3>
+                    </div>
+                </a>
+            </div>
+           
+            <div class="col-md-4"  style="margin-bottom: 50px;">
+                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="" alt="" style="width: 300px; height: 300px;">
+                        <h3 class="h6 text-center mt-1"></h3>
                     </div>
                 </a>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                       
+                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="" alt="" style="width: 300px; height: 300px;">
+                        <h3 class="h6 text-center mt-1"></h3>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-md-4"  style="margin-bottom: 50px;">
+                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="" alt="" style="width: 300px; height: 300px;">
+                        <h3 class="h6 text-center mt-1"></h3>
                     </div>
                 </a>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                       
+                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="" alt="" style="width: 300px; height: 300px;">
+                        <h3 class="h6 text-center mt-1"></h3>
                     </div>
                 </a>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                     
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-2">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                       
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-2">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                       
+                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="" alt="" style="width: 300px; height: 300px;">
+                        <h3 class="h6 text-center mt-1"></h3>
                     </div>
                 </a>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="services py-5">
-    <div class="container text-center">
-        <div class="row">
-
-            <div class="col-md-2">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                        
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-2">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                       
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-2">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                        
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-2">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                        
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-2">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                        
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-2">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
+</div>
 <!-- Rodape -->
-<?php require('includes/radape.php') ?>
+<?php require('../includes/radape.php') ?>
 </body>
 </html>

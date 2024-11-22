@@ -10,7 +10,6 @@
 <!-- Menu --->
 <?php require('../includes/menu.php') ?>
 
-
 <div class="container text-center" style="margin-bottom: 150px;">
         <div class="row">
        
@@ -70,10 +69,9 @@
             </div>
         </div>
 </div>
-
-
+    
 
 <!-- Rodape -->
-<?php require('../includes/radape.php') ?>
+<?php require('includes/radape.php') ?>
 </body>
 </html>

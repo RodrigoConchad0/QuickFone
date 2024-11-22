@@ -6,71 +6,71 @@
     <title>Document</title>
     <?php include('includes/linkscss.php') /* pode ser require */?>
 </head>
-<body>
+<body style="margin-top: 150px;">
     <!-- Menu --->
     <?php require('includes/menu.php') ?>
 
-<section class="services py-5">
-    <div class="container text-center">
+
+    <div class="container text-center" style="margin-bottom: 150px;">
         <div class="row">
-            
+       
             <!-- Iphone -->
-            <div class="col-md-2">
+            <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="telemoveis\Iphone.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                        <img class="img-fluid mb-1" src="imagens/iphone.png" alt="Iphone" style="max-width: 120px; max-height: 120px;">
+                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px;">
+                        <img class="img-fluid mb-1" src="imagens/iphone.png" alt="Iphone" style="max-width: 300px; max-height: 300px;">
                         <h3 class="h6 text-center mt-1">Iphone</h3>
                     </div>
                 </a>
             </div>
-            <!-- Samesung -->
-            <div class="col-md-2">
-                <a href="telemoveis\Samesung.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                        <img class="img-fluid mb-1" src="imagens/samesung.webp" alt="Samsung" style="max-width: 120px; max-height: 120px;">
-                        <h3 class="h6 text-center mt-1">Samesung</h3>
+            <!-- Samsung -->
+            <div class="col-md-4"  style="margin-bottom: 50px;">
+                <a href="telemoveis\Samsung.php" class="text-decoration-none" style="color: black;">
+                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px;">
+                        <img class="img-fluid mb-1" src="imagens/samesung.webp" alt="Samsung" style="max-width: 300px; max-height: 300px;">
+                        <h3 class="h6 text-center mt-1">Samsung</h3>
                     </div>
                 </a>
             </div>
             <!-- Hawei -->
-            <div class="col-md-2">
+            <div class="col-md-4" style="margin-bottom: 50px;">
                 <a href="telemoveis\Hawei.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                        <img class="img-fluid mb-1" src="imagens/hawei.png" alt="Hawei" style="max-width: 120px; max-height: 120px;">
+                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px;">
+                        <img class="img-fluid mb-1" src="imagens/hawei.png" alt="Hawei" style="max-width: 300px; max-height: 300px;">
                         <h3 class="h6 text-center mt-1">Hawei</h3>
                     </div>
                 </a>
             </div>
             <!-- Xiaomi -->
-            <div class="col-md-2">
+            <div class="col-md-4" style="margin-bottom: 50px;">
                 <a href="telemoveis\Xiaomi.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                        <img class="img-fluid mb-1" src="imagens/xiomi.png" alt="Xiomi" style="max-width: 120px; max-height: 120px;">
+                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px;">
+                        <img class="img-fluid mb-1" src="imagens/xiomi.png" alt="Xiomi" style="max-width: 300px; max-height: 300px;">
                         <h3 class="h6 text-center mt-1">Xiaomi</h3>
                     </div>
                 </a>
             </div>
             <!-- Oppo -->
-            <div class="col-md-2">
+            <div class="col-md-4" style="margin-bottom: 50px;">
                 <a href="telemoveis\Oppo.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                        <img class="img-fluid mb-1" src="imagens/oppo.webp" alt="Oppo" style="max-width: 120px; max-height: 120px;">
+                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px;">
+                        <img class="img-fluid mb-1" src="imagens/oppo.webp" alt="Oppo" style="max-width: 300px; max-height: 300px;">
                         <h3 class="h6 text-center mt-1">Oppo</h3>
                     </div>
                 </a>
             </div>
             <!-- Procurar -->
-            <div class="col-md-2">
-                <a href="" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded d-flex flex-column align-items-center justify-content-start" style="height: 200px;">
-                        <img class="img-fluid mb-1" src="imagens/lupa.png" alt="Lupa" style="max-width: 120px; max-height: 120px;">
-                        <h3 class="h6 text-center mt-1">Procurar</h3>
+            <div class="col-md-4" style="margin-bottom: 50px;">
+                <a href="telemoveis\Outros.php" class="text-decoration-none" style="color: black;">
+                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px;">
+                        <img class="img-fluid mb-1" src="imagens\procurar.png" alt="Lupa" style="max-width: 300px; max-height: 300px;">
+                        <h3 class="h6 text-center mt-1">Outros</h3>
                     </div>
                 </a>
             </div>
         </div>
     </div>
-</section>
+
 
 
 <!-- Rodape -->
