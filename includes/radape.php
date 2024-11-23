@@ -36,7 +36,7 @@
         
         <!-- Linha de Copyright -->
         <div class="text-center py-3">
-            <p class="mb-0">© 2024 Nome da Empresa. Todos os direitos reservados.</p>
+            <p class="mb-0">© 2024 Quick Phone.</p>
         </div>
     </div>
 </footer>

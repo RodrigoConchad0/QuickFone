@@ -27,65 +27,65 @@
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="cartao highlight">
-                    <img src="imagens\bateria.webp" alt="" style="max-width: 120px; max-height: 120px;">
+                    <img src="..\..\imagens\bateria.webp" alt="" style="max-width: 120px; max-height: 120px;">
                     <h5>Bateria</h5>
-                    <a href="#" class="btn btn-secondary contact-button">Contacte-nos</a>
+                    <a href="#" class="btn btn-secondary contact-button"></a>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="cartao highlight">
-                    <img src="imagens\frontal.png" alt="" style="max-width: 120px; max-height: 120px;">
+                    <img src="..\..\imagens\frontal.png" alt="" style="max-width: 120px; max-height: 120px;">
                     <h5>Câmara Frontal</h5>
-                    <a href="#" class="btn btn-secondary contact-button">Contacte-nos</a>
+                    <a href="#" class="btn btn-secondary contact-button"></a>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="cartao highlight">
-                    <img src="imagens\traseira.png" alt="" style="max-width: 120px; max-height: 120px;">
+                    <img src="..\..\imagens\traseira.png" alt="" style="max-width: 120px; max-height: 120px;">
                     <h5>Câmara Traseira</h5>
-                    <a href="#" class="btn btn-secondary contact-button">Contacte-nos</a>
+                    <a href="#" class="btn btn-secondary contact-button"></a>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="cartao highlight">
-                    <img src="imagens\ecra.webp" alt="" style="max-width: 120px; max-height: 120px;">
+                    <img src="..\..\imagens\ecra.webp" alt="" style="max-width: 120px; max-height: 120px;">
                     <h5>Vidro / Ecra</h5>
-                    <a href="#" class="btn btn-secondary contact-button">Contacte-nos</a>
+                    <a href="#" class="btn btn-secondary contact-button"></a>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="cartao highlight">
-                    <img src="imagens\power.png" alt="" style="max-width: 120px; max-height: 120px;">
+                    <img src="..\..\imagens/power.png" alt="" style="max-width: 120px; max-height: 120px;">
                     <h5>Botão Power</h5>
-                    <a href="#" class="btn btn-secondary contact-button">Contacte-nos</a>
+                    <a href="#" class="btn btn-secondary contact-button"></a>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="cartao highlight">
-                    <img src="imagens\usb.png" alt="" style="max-width: 120px; max-height: 120px;">
+                    <img src="..\..\imagens\usb.png" alt="" style="max-width: 120px; max-height: 120px;">
                     <h5>Conector Lightning</h5>
-                    <a href="#" class="btn btn-secondary contact-button">Contacte-nos</a>
+                    <a href="#" class="btn btn-secondary contact-button"></a>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="cartao highlight">
-                    <img src="imagens\faceid.png" alt="" style="max-width: 120px; max-height: 120px;">
+                    <img src="..\..\imagens\faceid.png" alt="" style="max-width: 120px; max-height: 120px;">
                     <h5>FaceID</h5>
-                    <a href="#" class="btn btn-secondary contact-button">Contacte-nos</a>
+                    <a href="#" class="btn btn-secondary contact-button"></a>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="cartao highlight">
-                    <img src="imagens\formatar.png" alt="" style="max-width: 120px; max-height: 120px;">
+                    <img src="..\..\imagens\formatar.png" alt="" style="max-width: 120px; max-height: 120px;">
                     <h5>Formatação</h5>
-                    <a href="#" class="btn btn-secondary contact-button">Contacte-nos</a>
+                    <a href="#" class="btn btn-secondary contact-button"></a>
                 </div>
             </div>
 
