@@ -18,7 +18,7 @@
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="telemoveis\Iphone.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px;">
-                        <img class="img-fluid mb-1" src="imagens/iphone.png" alt="Iphone" style="max-width: 300px; max-height: 300px;">
+                        <img class="img-fluid mb-1" src="imagens/iphone.jpg" alt="Iphone" style="max-width: 300px; max-height: 300px;">
                         <h3 class="h6 text-center mt-1">Iphone</h3>
                     </div>
                 </a>
@@ -27,7 +27,7 @@
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="telemoveis\Samsung.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px;">
-                        <img class="img-fluid mb-1" src="imagens/samesung.webp" alt="Samsung" style="max-width: 300px; max-height: 300px;">
+                        <img class="img-fluid mb-1" src="imagens/samesung.jpg" alt="Samsung" style="max-width: 300px; max-height: 300px;">
                         <h3 class="h6 text-center mt-1">Samsung</h3>
                     </div>
                 </a>
@@ -36,7 +36,7 @@
             <div class="col-md-4" style="margin-bottom: 50px;">
                 <a href="telemoveis\Hawei.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px;">
-                        <img class="img-fluid mb-1" src="imagens/hawei.png" alt="Hawei" style="max-width: 300px; max-height: 300px;">
+                        <img class="img-fluid mb-1" src="imagens/hawei.jpg" alt="Hawei" style="max-width: 300px; max-height: 300px;">
                         <h3 class="h6 text-center mt-1">Huawei</h3>
                     </div>
                 </a>
@@ -45,7 +45,7 @@
             <div class="col-md-4" style="margin-bottom: 50px;">
                 <a href="telemoveis\Xiaomi.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px;">
-                        <img class="img-fluid mb-1" src="imagens/xiomi.png" alt="Xiomi" style="max-width: 300px; max-height: 300px;">
+                        <img class="img-fluid mb-1" src="imagens/xiomi.jpg" alt="Xiomi" style="max-width: 300px; max-height: 300px;">
                         <h3 class="h6 text-center mt-1">Xiaomi</h3>
                     </div>
                 </a>
@@ -54,7 +54,7 @@
             <div class="col-md-4" style="margin-bottom: 50px;">
                 <a href="telemoveis\Oppo.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px;">
-                        <img class="img-fluid mb-1" src="imagens/oppo.webp" alt="Oppo" style="max-width: 300px; max-height: 300px;">
+                        <img class="img-fluid mb-1" src="imagens/oppo.jpg" alt="Oppo" style="max-width: 300px; max-height: 300px;">
                         <h3 class="h6 text-center mt-1">Oppo</h3>
                     </div>
                 </a>
@@ -63,7 +63,7 @@
             <div class="col-md-4" style="margin-bottom: 50px;">
                 <a href="telemoveis\Outros.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px;">
-                        <img class="img-fluid mb-1" src="imagens\procurar.png" alt="Lupa" style="max-width: 300px; max-height: 300px;">
+                        <img class="img-fluid mb-1" src="imagens\procurar.jpg" alt="Lupa" style="max-width: 300px; max-height: 300px;">
                         <h3 class="h6 text-center mt-1">Outros</h3>
                     </div>
                 </a>
