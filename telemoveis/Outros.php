@@ -13,9 +13,9 @@
 <div class="alert alert-info" style=" text-align: center; color:black ">
 Descreve bem o teu dispositivo e o problema referente a ele,
 <br>
-um tecnico especializado irá consultar o teu pedido e receberás um email com o orçamento 
+um técnico especializado irá consultar o teu pedido e receberás um email com o orçamento 
 <br>
-e com todas as informções que tens de seguir se quiseres realizar a reparação
+e com todas as informações que tens de seguir se quiseres realizar a reparação.
 </div>
 
 <div class="container" style="">

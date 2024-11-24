@@ -236,6 +236,15 @@
                 </a>
             </div>
 
+            <div class="col-md-4" style="margin-bottom: 50px;">
+                <a href="../telemoveis\Outros.php" class="text-decoration-none" style="color: black;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px;">
+                        <img class="img-fluid mb-1" src="../imagens\procurar.png" alt="Lupa" style="max-width: 300px; max-height: 300px;">
+                        <h3 class="h6 text-center mt-1">Outros</h3>
+                    </div>
+                </a>
+            </div>
+
             
 
         </div>

@@ -6,7 +6,7 @@
     <title>Document</title>
     <?php include('includes/linkscss.php') ?>
 </head>
-<body style="margin-top: 150px;">
+<body style="margin-top: 50px;">
     <!-- Menu --->
     <?php require('includes/menu.php') ?>
     
@@ -30,7 +30,7 @@
                     <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                         <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                             <img class="img-fluid mb-1" src="../imagens/iphone8plus.jpg" alt="Iphone 8 plus" >
-                            <h3 class="h6 text-center mt-1">Iphone 8 PLUS</h3>
+                            <h3 class="h6 text-center mt-1">Iphone 8 Plus</h3>
                         </div>
                     </a>
                 </div>
@@ -54,7 +54,7 @@
                         <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                             <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                                 <img class="img-fluid mb-1" src="../imagens/iphonexplus.jpg" alt="" >
-                                <h3 class="h6 text-center mt-1">Iphone X plus</h3>
+                                <h3 class="h6 text-center mt-1">Iphone X Plus</h3>
                             </div>
                         </a>
                     </div>
@@ -85,7 +85,7 @@
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/iphone11promax.jpg" alt="" >
-                        <h3 class="h6 text-center mt-1">Iphone 11 pro max</h3>
+                        <h3 class="h6 text-center mt-1">Iphone 11 Pro Max</h3>
                     </div>
                 </a>
             </div>
@@ -202,6 +202,17 @@
                     <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/iphone15promax.jpg" alt="" >
                         <h3 class="h6 text-center mt-1">Iphone 15 Pro Max</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>
+
+            <div class="col-md-4" style="margin-bottom: 50px;">
+                <a href="../telemoveis\Outros.php" class="text-decoration-none" style="color: black;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px;">
+                        <img class="img-fluid mb-1" src="../imagens\procurar.png" alt="Lupa" style="max-width: 300px; max-height: 300px;">
+                        <h3 class="h6 text-center mt-1">Outros</h3>
                     </div>
                 </a>
             </div>
