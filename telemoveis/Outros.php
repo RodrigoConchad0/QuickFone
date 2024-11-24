@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php include('../includes/linkscss.php') /* pode ser require */?>
+    <?php include('includes/linkscss.php') /* pode ser require */?>
 </head>
 <body style="margin-top: 100px;">
     <!-- Menu --->
-    <?php require('../includes/menu.php') ?>
+    <?php require('includes/menu.php') ?>
 
 <div class="alert alert-info" style=" text-align: center; color:black ">
 Descreve bem o teu dispositivo e o problema referente a ele,
@@ -53,6 +53,6 @@ e com todas as informções que tens de seguir se quiseres realizar a reparaçã
 <br>
 
 <!-- Rodape -->
-<?php require('../includes/radape.php') ?>
+<?php require('includes/radape.php') ?>
 </body>
 </html>

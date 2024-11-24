@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php include('../includes/linkscss.php') /* pode ser require */?>
+    <?php include('includes/linkscss.php') /* pode ser require */?>
 </head>
 <body style="margin-top: 100px;">
 <!-- Menu --->
-<?php require('../includes/menu.php') ?>
+<?php require('includes/menu.php') ?>
 
 <div class="container text-center" style="margin-bottom: 150px;">
         <div class="row">
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/s24.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/s24.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S24</h3>
                     </div>
                 </a>
@@ -25,8 +25,8 @@
             
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/s24ultra.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/s24ultra.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S24 Ultra</h3>
                     </div>
                 </a>
@@ -35,8 +35,8 @@
           
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/s24plus.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/s24plus.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S24 Plus</h3>
                     </div>
                 </a>
@@ -46,7 +46,7 @@
             
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/s23.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S23</h3>
                     </div>
@@ -55,8 +55,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/s23ultra.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/s23ultra.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S23 Ultra</h3>
                     </div>
                 </a>
@@ -64,8 +64,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/s23plus.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/s23plus.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S23 Plus</h3>
                     </div>
                 </a>
@@ -76,8 +76,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/s22.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/s22.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S22</h3>
                     </div>
                 </a>
@@ -85,8 +85,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/s22ultra.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/s22ultra.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S22 Ultra</h3>
                     </div>
                 </a>
@@ -94,8 +94,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/s22plus.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/s22plus.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S22 Plus</h3>
                     </div>
                 </a>
@@ -106,8 +106,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/s21.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens\s21.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S21</h3>
                     </div>
                 </a>
@@ -115,8 +115,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/s21ultra.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/s21ultra.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S21 Ultra</h3>
                     </div>
                 </a>
@@ -124,8 +124,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/s21plus.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens\s21plus.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S21 Plus</h3>
                     </div>
                 </a>
@@ -136,8 +136,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/s20.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/s20.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S20</h3>
                     </div>
                 </a>
@@ -145,8 +145,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/s20ultra.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/s20ultra.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S20 Ultra</h3>
                     </div>
                 </a>
@@ -154,7 +154,7 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/s20plus.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S20 Plus</h3>
                     </div>
@@ -165,7 +165,7 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/s10.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S10</h3>
                     </div>
@@ -174,8 +174,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/s10plus.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/s10plus.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S10 Ultra</h3>
                     </div>
                 </a>
@@ -183,7 +183,7 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/s10e.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">S10e</h3>
                     </div>
@@ -196,7 +196,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-4"  style="margin-bottom: 50px;">
                         <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                            <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                            <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                                 <img class="img-fluid mb-1" src="../imagens/s9.jpg" alt="" style="width: 300px; height: 300px;">
                                 <h3 class="h6 text-center mt-1">S9</h3>
                             </div>
@@ -205,8 +205,8 @@
 
                     <div class="col-md-4"  style="margin-bottom: 50px;">
                         <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                            <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                                <img class="img-fluid mb-1" src="../imagens/s9plus.webp" alt="" style="width: 300px; height: 300px;">
+                            <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                                <img class="img-fluid mb-1" src="../imagens/s9plus.jpg" alt="" style="width: 300px; height: 300px;">
                                 <h3 class="h6 text-center mt-1">S9 Plus</h3>
                             </div>
                         </a>
@@ -220,7 +220,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-4"  style="margin-bottom: 50px;">
                         <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                            <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                            <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                                 <img class="img-fluid mb-1" src="../imagens/s8.jpg" alt="" style="width: 300px; height: 300px;">
                                 <h3 class="h6 text-center mt-1">S8</h3>
                             </div>
@@ -229,7 +229,7 @@
 
                     <div class="col-md-4"  style="margin-bottom: 50px;">
                         <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                            <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                            <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                                 <img class="img-fluid mb-1" src="../imagens/s8plus.jpg" alt="" style="width: 300px; height: 300px;">
                                 <h3 class="h6 text-center mt-1">S8 Plus</h3>
                             </div>
@@ -242,8 +242,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/zfold5.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/zfold5.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">Z Fold 5</h3>
                     </div>
                 </a>
@@ -251,8 +251,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/zfold4.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/zfold4.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">Z Fold 4</h3>
                     </div>
                 </a>
@@ -260,8 +260,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/zfold3.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/zfold3.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">Z Fold 3</h3>
                     </div>
                 </a>
@@ -272,8 +272,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/zflod2.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/zflod2.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">Z Fold 2</h3>
                     </div>
                 </a>
@@ -281,8 +281,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/zflip5.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/zflip5.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">Z Flip 5</h3>
                     </div>
                 </a>
@@ -290,8 +290,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/zflip4.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/zflip4.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">Z Flip 4</h3>
                     </div>
                 </a>
@@ -303,8 +303,8 @@
                 <div class="row justify-content-center">
                     <div class="col-md-4"  style="margin-bottom: 50px;">
                         <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                            <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                                <img class="img-fluid mb-1" src="../imagens/zflip3.webp" alt="" style="width: 300px; height: 300px;">
+                            <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                                <img class="img-fluid mb-1" src="../imagens/zflip3.jpg" alt="" style="width: 300px; height: 300px;">
                                 <h3 class="h6 text-center mt-1">Z Flip 3</h3>
                             </div>
                         </a>
@@ -312,8 +312,8 @@
 
                     <div class="col-md-4"  style="margin-bottom: 50px;">
                         <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                            <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                                <img class="img-fluid mb-1" src="../imagens/zflip2.webp" alt="" style="width: 300px; height: 300px;">
+                            <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                                <img class="img-fluid mb-1" src="../imagens/zflip2.jpg" alt="" style="width: 300px; height: 300px;">
                                 <h3 class="h6 text-center mt-1">Z Flip 2</h3>
                             </div>
                         </a>
@@ -325,7 +325,7 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/A73.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">A73</h3>
                     </div>
@@ -334,7 +334,7 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/A72.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">a72</h3>
                     </div>
@@ -343,7 +343,7 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/a71.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">a71</h3>
                     </div>
@@ -355,8 +355,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/A54.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/A54.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">a54</h3>
                     </div>
                 </a>
@@ -364,7 +364,7 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/A53.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">a53</h3>
                     </div>
@@ -373,7 +373,7 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/A52.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">A52</h3>
                     </div>
@@ -385,7 +385,7 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/A51.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">A51</h3>
                     </div>
@@ -394,8 +394,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/A34.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/A34.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">A34</h3>
                     </div>
                 </a>
@@ -403,7 +403,7 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/A33.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">A33</h3>
                     </div>
@@ -415,7 +415,7 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/A14.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">A14</h3>
                     </div>
@@ -424,8 +424,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/note9.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/note9.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">Note 9</h3>
                     </div>
                 </a>
@@ -433,8 +433,8 @@
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
                 <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/note8.webp" alt="" style="width: 300px; height: 300px;">
+                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
+                        <img class="img-fluid mb-1" src="../imagens/note8.jpg" alt="" style="width: 300px; height: 300px;">
                         <h3 class="h6 text-center mt-1">Note 8</h3>
                     </div>
                 </a>
@@ -447,6 +447,6 @@
     
 
     <!-- Rodape -->
-<?php require('../includes/radape.php') ?>
+<?php require('includes/radape.php') ?>
 </body>
 </html>

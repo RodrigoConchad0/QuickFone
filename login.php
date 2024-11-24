@@ -7,7 +7,7 @@
     <?php include('includes/linkscss.php') /* pode ser require */?>
     <style>
     body{
-      background: url('imagens/background.webp');
+      background: url('imagens/background.jpg');
       background-size: cover;
     }
 

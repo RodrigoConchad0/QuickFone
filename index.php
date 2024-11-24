@@ -37,7 +37,7 @@
                 <a href="telemoveis\Hawei.php" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4 bg-light rounded" style=" max-width: 500px; max-height: 500px;">
                         <img class="img-fluid mb-1" src="imagens/hawei.png" alt="Hawei" style="max-width: 300px; max-height: 300px;">
-                        <h3 class="h6 text-center mt-1">Hawei</h3>
+                        <h3 class="h6 text-center mt-1">Huawei</h3>
                     </div>
                 </a>
             </div>
