@@ -14,9 +14,9 @@
             <div class="w-75">
             <a class="navbar-brand w-75" href="../../index.php">
             <div class="col-2">  
-            <img class="float-start w-75 "src="../../imagens/logo.png" alt="">
+            <img class="float-start w-75 "src="../../imagens/logo.jpg" alt="">
             </div>  
-            </a>
+            </a>    
             </div>
    
             <form class="d-flex w-50 ms-auto " role="search">

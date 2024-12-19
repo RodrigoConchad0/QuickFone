@@ -6,17 +6,34 @@
     <title>Document</title>
     <?php include('includes/linkscss.php') /* pode ser require */?>
 </head>
-<body style="margin-top: 100px;">
+<body style="margin-top: 150px;">
 <!-- Menu --->
 <?php require('includes/menu.php') ?>
 
+<div class="container mt-3 mb-5" style="margin-left: 0px; margin-top: -100px;">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="../index.php" class="">Home</a>
+                </li>
+                
+                <li class="breadcrumb-item active" aria-current="page">Oppo</li>
+            </ol>
+        </nav>
+</div>
 
-<div class="container text-center" style="margin-bottom: 150px;">
+<div style=" margin-top: -100px; font-size: 40px; text-align: center;" class=" text-black p-3 fixed-top;">
+    <img style=" max-width: 180px; max-height: 180px;" class="img-fluid mb-1" src="../imagens/oppo.png" alt="oppo" >
+           
+    </div>
+
+
+<div class="container text-center" style=" margin-top:-30px; margin-bottom: 150px;">
         <div class="row">
        
             
             <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php?idmodelo=1" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/oppoa58.jpg" alt="" style="width: 225px; height: 300px;">
                         <h3 class="h6 text-center mt-1">Oppo A58</h3>
@@ -25,7 +42,7 @@
             </div>
            
             <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php?idmodelo=2" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/oppoa58x.jpg" alt="" style="width: 240px; height: 300px;">
                         <h3 class="h6 text-center mt-1">Oppo A58 X</h3>
@@ -34,7 +51,7 @@
             </div>
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php?idmodelo=3" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/oppoa78.jpg" alt="" style="width: 225px; height: 300px;">
                         <h3 class="h6 text-center mt-1">Oppo A78</h3>
@@ -45,7 +62,7 @@
             <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php?idmodelo=4" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/oppoa98.jpg" alt="" style="width: 225px; height: 300px;">
                         <h3 class="h6 text-center mt-1">Oppo A98</h3>
@@ -53,17 +70,17 @@
                 </a>
             </div>
 
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+            <div class="col-md-4"  style="margin-bottom: 50px; margin-top: 25px;">
+                <a href="reparacao\tiposreparaçao.php?idmodelo=5" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4" style=" max-width: 500px; max-height: 700px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/oppofindx6.jpg" alt="" style="width: 300px; height: 340px; margin-top: -25px;">
+                        <img class="img-fluid mb-1" src="../imagens/oppofindx6.jpg" alt="" style="width: 225px; height: 300px; margin-top: -25px;">
                         <h3 class="h6 text-center mt-1">Oppo Find X6</h3>
                     </div>
                 </a>
             </div>
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php?idmodelo=6" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/opporeno10.jpg" alt="" style="width: 225px; height: 300px;">
                         <h3 class="h6 text-center mt-1">Opoo Reno 10</h3>
@@ -74,7 +91,7 @@
             <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php?idmodelo=7" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/opporeno10pro.jpg" alt="" style="width: 235px; height: 300px;">
                         <h3 class="h6 text-center mt-1">Oppo Reno 10 pro</h3>
@@ -83,7 +100,7 @@
             </div>
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php?idmodelo=8" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/opporeno12.jpg" alt="" style="width: 235px; height: 300px;">
                         <h3 class="h6 text-center mt-1">Oppo Reno 12</h3>
@@ -92,7 +109,7 @@
             </div>
 
             <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php" class="text-decoration-none" style="color: black;">
+                <a href="reparacao\tiposreparaçao.php?idmodelo=9" class="text-decoration-none" style="color: black;">
                     <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
                         <img class="img-fluid mb-1" src="../imagens/opporeno12pro.jpg" alt="" style="width: 235px; height: 300px;">
                         <h3 class="h6 text-center mt-1">Oppo Reno 12 Pro</h3>
