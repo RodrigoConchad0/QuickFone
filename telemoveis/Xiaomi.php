@@ -4,23 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php include('includes/linkscss.php') ?>
+    <?php include('../includes/linkscss.php') ?>
 </head>
 <body style="margin-top: 150px;">
     <!-- Menu --->
-    <?php require('includes/menu.php') ?>
+    <?php require('../includes/menu.php') ?>
 
     <div class="container mt-3 mb-5" style="margin-left: 0px;margin-top: -100px;">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                    <a href="../index.php" class="">Home</a>
-                </li>
-                
-                <li class="breadcrumb-item active" aria-current="page">Xiaomi</li>
-            </ol>
-        </nav>
-</div>
+
+            <button  style= "background-color: #40E0D0; color: black;" type="button" class="btn btn-secondary" onclick="history.back()">Home</button>
+            <button style= "background-color: #40E0D0; color: black;" type="button" class="btn btn-secondary" >Xiaomi</button>
+    </div>
 
     <div style=" margin-top: -50px; font-size: 40px; text-align: center;" class=" text-black p-3 fixed-top;">
     <img style=" max-width: 80px; max-height: 80px;" class="img-fluid mb-1" src="../imagens/xiomi.png" alt="Xiaomi" >
@@ -272,6 +266,6 @@
 
 
     <!-- Rodape -->
-    <?php require('includes/radape.php') ?>
+    <?php require('../includes/rodape.php') ?>
 </body>
 </html>

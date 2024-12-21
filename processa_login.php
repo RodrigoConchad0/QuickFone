@@ -1,12 +1,13 @@
 <?php
 // Conexão com a base de dados
 $host = 'localhost';
-$dbname = 'assistencia_telemoveis';
-$user = 'root'; // Substitua pelo seu usuário
-$password = ''; // Substitua pela sua senha
+$user = 'rd';
+$pass = 'rd';
+$db = 'quickphone';
+
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
+    $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     die("Erro de conexão: " . $e->getMessage());
@@ -14,11 +15,11 @@ try {
 
 // Verificar credenciais
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    $user = $_POST['username'];
+    $pass = $_POST['password'];
 
     $stmt = $pdo->prepare("SELECT * FROM valida_login WHERE username = :username AND password = :password");
-    $stmt->execute(['username' => $username, 'password' => $password]);
+    $stmt->execute(['username' => $user, 'password' => $pass]);
 
     if ($stmt->rowCount() > 0) {
         // Redireciona ao sucesso

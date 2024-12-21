@@ -60,7 +60,7 @@
     </form>
   </div>
   <br><br><br><br>
-<?php require('includes/radape.php') ?>
+<?php require('includes/rodape.php') ?>
 
 <script src="js/bootstrap.bundle.min.js">
 

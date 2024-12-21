@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assistência Técnica</title>
-    <?php include('includes/linkscss.php'); ?>
-    <?php include('includes/connection.php'); ?>
+    <?php 
+        include('../includes/linkscss.php'); 
+          
+        include('../includes/connection.php'); 
+        
+        ?>
+    
+
+
     <style>
         /* Ajusta a margem superior para que o texto fique visível, acima do menu */
         .alert-info {
@@ -40,8 +47,19 @@
     </style>
 </head>
 <body style="margin-top: 100px;">
+
+    <?php 
+    include('../includes/buscaid.php');
+    
+    
+        $nomeModelo = obterNomeModelo1($conn, $id);
+        $precoReparacao = obterPreco1($conn, $id);
+        $tipoReparacao = obterReparacao($conn, $id);
+    ?> 
+
     <!-- Menu -->
-    <?php require('includes/menu.php'); ?>
+    <?php require('../includes/menu.php'); ?>
+
 
 
     <div class="alert alert-info text-center">
@@ -52,43 +70,7 @@
        
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col col-sm-10 col-lg-8 offset-sm-1 offset-lg-2">
-                <!-- Formulário de envio de informações -->
-                <form action="" method="POST">
-                    <div class="mb-2">
-                        <label class="form-label" for="#f-nome-completo">Nome Completo</label>
-                        <input type="text" name="fNomeCompleto" id="f-nome-completo"
-                        class="form-control" placeholder="Insira o seu nome completo" required>
-                    </div>
-                    <div class="mb-2">
-                        <label class="form-label" for="#f-telefone">Número de Telefone</label>
-                        <input type="tel" name="fTelefone" id="f-telefone"
-                        class="form-control" placeholder="Insira o seu número de telefone" required>
-                    </div>
-                    <div class="mb-2">
-                        <label class="form-label" for="#f-email">Endereço de Email</label>
-                        <input type="email" name="fEmail" id="f-email"
-                        class="form-control" placeholder="Insira o seu email" required>
-                    </div>
-                    <div class="mb-2">
-                        <label class="form-label">Forma de Contato Preferível</label>
-                        <select class="form-select" name="fContatoPreferido">
-                            <option value="email">Email</option>
-                            <option value="telefone">Telefone</option>
-                        </select>
-                    </div>
-                    <div class="mb-2">
-                        <label class="form-label" for="#f-nome">Informações do Dispositivo</label>
-                        <input type="text" name="fNome" id="f-nome"
-                        class="form-control" placeholder="Insira o nome do dispositivo (marca, modelo, etc...)">
-                    </div>
-                    <div class="mb-2">
-                        <textarea class="form-control" name="fMsg" id="f-msg" rows="3" placeholder="Descrição dos problemas"></textarea>
-                    </div>
-                    <button class="btn btn-outline-primary" type="submit">Enviar</button>
-                </form>
+    <?php include('../includes/formulario2.php'); ?>
 
                 <!-- mensagens de sucesso ou erro -->
                 <?php
@@ -98,16 +80,18 @@
                     $telefone = $_POST['fTelefone'];
                     $email = $_POST['fEmail'];
                     $contatoPreferido = $_POST['fContatoPreferido'];
-                    $dispositivo = $_POST['fNome'];
-                    $descricao = $_POST['fMsg'];
+                    $dispositivo = $nomeModelo;;
+                    $descricao = $tipoReparacao;
+                    $preço = $precoReparacao;
+
 
                     
                     // Inserção de dados na tabela
-                    $sql = "INSERT INTO formularios (nome_completo, telefone, email, contato_preferido, dispositivo, descricao_problemas) 
-                            VALUES (?, ?, ?, ?, ?, ?)";
+                    $sql = "INSERT INTO formularios (nome_completo, telefone, email, contato_preferido, dispositivo, descricao_problemas,preco) 
+                            VALUES (?, ?, ?, ?, ?, ?, ?)";
 
                     $stmt = $conn->prepare($sql);
-                    $stmt->bind_param("ssssss", $nomeCompleto, $telefone, $email, $contatoPreferido, $dispositivo, $descricao);
+                    $stmt->bind_param( "ssssssd" ,$nomeCompleto, $telefone, $email, $contatoPreferido, $dispositivo, $descricao, $preço);
 
                     if ($stmt->execute()) {
                         // Exibe mensagem de sucesso
@@ -128,7 +112,7 @@
     <br><br><br><br>
 
     <!-- Rodapé -->
-    <?php require('includes/radape.php'); ?>
+    <?php require('../includes/rodape.php'); ?>
 
 </body>
 </html>

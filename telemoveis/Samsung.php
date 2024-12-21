@@ -4,23 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php include('includes/linkscss.php') /* pode ser require */?>
+    <?php include('../includes/linkscss.php') /* pode ser require */?>
 </head>
 <body style="margin-top: 150px;">
 <!-- Menu --->
-<?php require('includes/menu.php') ?>
+<?php require('../includes/menu.php') ?>
 
-<div class="container mt-3 mb-5" style="margin-left: 0px;">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                    <a href="../index.php" class="">Home</a>
-                </li>
-                
-                <li class="breadcrumb-item active" aria-current="page">Samaung</li>
-            </ol>
-        </nav>
-</div>
+        <div class="container mt-3 mb-5" style="margin-left: 0px;margin-top: -100px;">
+            <button style= " color: black; background-color: #40E0D0" type="button" class="btn btn-secondary" onclick="history.back()">Home</button>
+            <button style= " color: black; background-color: #40E0D0" type="button" class="btn btn-secondary" >Samsung</button>
+        </div>
 
 
 
@@ -475,6 +468,6 @@
     
 
     <!-- Rodape -->
-<?php require('includes/radape.php') ?>
+<?php require('../includes/rodape.php') ?>
 </body>
 </html>

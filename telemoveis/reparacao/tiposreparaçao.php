@@ -1,4 +1,4 @@
-<?php require('includes/connection.php'); // Liga a página à base de dados através do ficheiro connection.php ?>
+<?php require('../../includes/connection.php'); // Liga a página à base de dados através do ficheiro connection.php ?>
 
 <!DOCTYPE html>
 <html lang="pt">
@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reparações Telemóvel</title>
-    <?php include('includes/linkscss.php'); // Inclui os ficheiros CSS necessários ?>
+    <?php include('../../includes/linkscss.php'); // Inclui os ficheiros CSS necessários ?>
     
     <style>
         /* Adiciona espaçamento entre o menu e as divs */
@@ -56,7 +56,7 @@
 
         .direita {
             width: 33%;
-            height: 55%;
+            height: 45%;
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -71,12 +71,29 @@
         }
 
         .direita img {
+            justify-content: center;
             width: auto;
             height: auto;
             margin-bottom: 10px;
             max-width: 200px;
             max-height: 200px;
-        
+        }
+        .direita h1 {
+            font-size: 15px; 
+        }
+
+        .direita h5 {
+            font-size: 15px; 
+        }
+
+        .direita p {
+            
+            font-size: 15px; 
+        }
+
+        .direita button {
+            
+            font-size: 15px; 
         }
 
         @media (max-width: 768px) {
@@ -87,74 +104,57 @@
             }
 
             .direita {
-                position: fixed;
-                bottom: 0;
-                margin-top: 350px;
+                font-size: 20px;
                 width: 100%;
-                height: 500px;
+                height: 250px;
                 right: 0;
                 box-shadow: none;
-                background-color: rgb(159, 206, 206, 0.6);
+                background-color: rgb(159, 206, 206, 1);
                 z-index: 1000;
+                margin-top:100px;
             }
 
             .direita img {
-                margin-top: -200px;
-                width: 130px;
-                height: 144px;
+                width: 25%;
+                height: 55%;
             }
+
+        .direita h1 {
+            font-size: 10px; 
+        }
+
+        .direita h5 {
+            font-size: 10px; 
+        }
+
+        .direita p {
+            font-size: 10px; 
+        }
+
+        .direita button {
+            font-size: 10px; 
+        }
+            
+
+            
         }
     </style>
 </head>
 <body>
-    <?php require('includes/menu.php'); // Inclui o menu principal da página ?>
+    <?php require('../../includes/menu.php'); // Inclui o menu principal da página ?>
+    <?php include('../../includes/buscaid.php');  ?>
 
     <div class="container my-5">
         <!-- Coluna da esquerda -->
         <div class="esquerda">
-            <?php
-            // Obtém o ID do modelo passado no URL
-            $idmodelo = isset($_GET['idmodelo']) ? intval($_GET['idmodelo']) : 0;
-
-            // Função para buscar o nome de cada modelo 
-            function obterNomeModelo($conn, $idmodelo) {
-                $sql = "SELECT nome FROM componentes WHERE idmodelo = ?";
-                $stmt = $conn->prepare($sql);
-                $stmt->bind_param("i", $idmodelo);
-                $stmt->execute();
-                $result = $stmt->get_result();
-                $row = $result->fetch_assoc();
-                return $row ? $row['nome'] : "Modelo não encontrado"; // Retorna o nome ou uma mensagem padrão
-            }
             
-            // Função para buscar o preço de cada reparação com base no modelo e tipo de reparação
-            function obterPreco($conn, $idmodelo, $tiporeparacao) {
-                $sql = "SELECT preco FROM componentes WHERE idmodelo = ? AND tiporeparacao = ?";
-                $stmt = $conn->prepare($sql); // Prepara a query SQL
-                $stmt->bind_param("is", $idmodelo, $tiporeparacao); // Liga os parâmetros à query
-                $stmt->execute(); // Executa a query
-                $result = $stmt->get_result(); // Obtém os resultados
-                $row = $result->fetch_assoc(); // Obtém a linha de resultados
-                return $row ? $row['preco'] : "Preço não disponível"; // Retorna o preço ou uma mensagem
-            }
-
-            // Busca os preços na base de dados para cada reparação
-            $precoBateria = obterPreco($conn, $idmodelo, 'Bateria');
-            $precoCameraFrontal = obterPreco($conn, $idmodelo, 'CameraFrontal');
-            $precoCameraTraseira = obterPreco($conn, $idmodelo, 'CameraTraseira');
-            $precoVidroEcra = obterPreco($conn, $idmodelo, 'VidroEcra');
-            $precoBotaoPower = obterPreco($conn, $idmodelo, 'BotaoPower');
-            $precoConectorCarga = obterPreco($conn, $idmodelo, 'ConectorCarga');
-            
-
-            $nomeModelo = obterNomeModelo($conn, $idmodelo);
-            ?>
+           
 
 
 
 
             <!-- Cartão para a reparação de Bateria -->
-            <div class="cartao" onclick="atualizarDetalhes('Bateria', 'Troca de bateria e higienização do equipamento', '../../imagens/bateriasubs.png')">
+            <div class="cartao" style=""; onclick="atualizarDetalhes('Bateria', 'Troca de bateria e higienização do equipamento', '../../imagens/bateriasubs.png' ,<?=$idBateria?>)">
                 <img src="../../imagens/bateria.jpg" alt="Bateria">
                 <h5>Bateria</h5>
                 
@@ -165,7 +165,7 @@
             </div>
 
             <!-- Cartão para a reparação da Câmara Frontal -->
-            <div class="cartao" onclick="atualizarDetalhes('Câmara Frontal', 'Detalhes sobre a câmara frontal...', '../../imagens/camarafrt.png')">
+            <div class="cartao" onclick="atualizarDetalhes('Câmara Frontal', 'Detalhes sobre a câmara frontal...', '../../imagens/camarafrt.png' ,<?=$idCameraFrontal?>)">
                 <img src="../../imagens/frontal.png" alt="Câmara Frontal">
                 <h5>Câmara Frontal</h5>
                 
@@ -176,7 +176,7 @@
             </div>
 
             <!-- Cartão para a reparação da Câmara Traseira -->
-            <div class="cartao" onclick="atualizarDetalhes('Câmara Traseira', 'Detalhes sobre a câmara traseira...', '../../imagens/camaratraseirapartida.jpg')">
+            <div class="cartao" onclick="atualizarDetalhes('Câmara Traseira', 'Detalhes sobre a câmara traseira...', '../../imagens/camaratraseirapartida.jpg',<?=$idCameraTraseira?>)">
                 <img src="../../imagens/traseira.png" alt="Câmara Traseira">
                 <h5>Câmara Traseira</h5>
                 
@@ -187,7 +187,7 @@
             </div>
 
             <!-- Cartão para a reparação de Vidro/Ecrã -->
-            <div class="cartao" onclick="atualizarDetalhes('Vidro/Ecrã', 'Detalhes sobre o vidro/ecrã...', '../../imagens/telemovelpartido.png')">
+            <div class="cartao" onclick="atualizarDetalhes('Vidro/Ecrã', 'Detalhes sobre o vidro/ecrã...', '../../imagens/telemovelpartido.png',<?=$idVidroEcra?>)">
                 <img src="../../imagens/ecra.jpg" alt="Vidro/Ecrã">
                 <h5>Vidro/Ecrã</h5>
                 
@@ -198,7 +198,7 @@
             </div>
 
             <!-- Cartão para a reparação do Botão Power -->
-            <div class="cartao" onclick="atualizarDetalhes('Botão Power', 'Detalhes sobre o botão power...', '../../imagens/botao.png')">
+            <div class="cartao" onclick="atualizarDetalhes('Botão Power', 'Detalhes sobre o botão power...', '../../imagens/botao.png',<?=$idBotaoPower?>)">
                 <img src="../../imagens/power.jpg" alt="Botão Power">
                 <h5>Botão Power</h5>
                 
@@ -209,7 +209,7 @@
             </div>
 
             <!-- Cartão para a reparação do Conector de Carga -->
-            <div class="cartao" onclick="atualizarDetalhes('Conector de Carga', 'Detalhes sobre o conector de carga...', '../../imagens/conectordecarga.jpg')">
+            <div class="cartao" onclick="atualizarDetalhes('Conector de Carga', 'Detalhes sobre o conector de carga...', '../../imagens/conectordecarga.jpg' , <?=$idConectorCarga?> )">
                 <img src="../../imagens/conector.png" alt="Conector de Carga">
                 <h5>Conector de Carga</h5>
                 
@@ -221,7 +221,7 @@
 
            
             
-                <a class="cartao" href="../outros.php" style="text-decoration: none; color: inherit;">
+                <a class="cartao" href="../outros.php?id=<?= $idmodelo ?>" style="text-decoration: none; color: inherit;">
                     <img src="../../imagens/procurar.png" alt="Vidro/Ecrã">
                     <h5 style="text-align: center;">outros</h5>
                 </a>
@@ -232,26 +232,28 @@
 
         <!-- Coluna da direita -->
         <div class="direita" id="detalhes">
-        <h1 class="text-dark" style=" margin-bottom: 205px; background-color: #40E0D0; position: fixed-top; border: 2px solid rgb(0, 0, 0); padding: 5px 10px; margin: 0; font-size: 22px;"><?= htmlspecialchars($nomeModelo); ?></h1>
+        <h1 class=" text-dark ;" style=" margin-bottom: 205px; background-color: #40E0D0; position: fixed-top; border: 2px solid rgb(0, 0, 0); padding: 5px 10px; margin: 0; "><?= htmlspecialchars($nomeModelo); ?></h1>
 
             <img src="../../imagens/telemovelpartido.png" alt="Detalhes"> 
-            <h5 id="titulo-detalhes">Detalhes</h5>
+            <h5  id="titulo-detalhes">Detalhes</h5>
             
             <p id="texto-detalhes">Selecione uma opção para ver os detalhes.</p> 
-            <button onclick=" window.location.href='../Outros1.php'" type="button" class="btn contact-button" style= "background-color: #40E0D0" data-bs-toggle="modal" data-bs-target="#meuModal2">
-                    Reparar Já
-                </button>
+            <a id="link-reparar" href="#" type="button" class="txt btn contact-button" style="background-color: #40E0D0">
+                Reparar Já
+            </a>
              
         </div> 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
 
     <script>
-        function atualizarDetalhes(titulo, texto, imagem,) {
+        
+        function atualizarDetalhes(titulo, texto, imagem, id) {
             // Atualiza o conteúdo da div à direita
             document.getElementById('titulo-detalhes').innerText = titulo;
             document.getElementById('texto-detalhes').innerText = texto;
             document.querySelector('#detalhes img').src = imagem;
+            document.getElementById('link-reparar').href = `../Outros1.php?id=${id}`;
         }
             // Seleciona a div da direita
             const detalhes = document.getElementById('detalhes');
@@ -262,7 +264,7 @@
             if (window.innerWidth <= 768) { // Somente no modo responsivo
                 // Adiciona o evento de scroll
                 window.addEventListener('scroll', () => {
-                    if (window.scrollY > 1420) {
+                    if (window.scrollY > 1620) {
                         detalhes.style.display = 'none'; // Oculta a div após 600px
                     } else {
                         detalhes.style.display = 'flex'; // Mostra a div antes de 600px
@@ -279,6 +281,6 @@
                  window.addEventListener('resize', verificarScroll);
     </script>
 
-    <?php require('includes/radape.php'); ?> €
+    <?php require('../../includes/rodape.php'); ?> €
  </body>
 </html>

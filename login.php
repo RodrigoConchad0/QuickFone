@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <?php require('includes/connection.php'); // Liga a página à base de dados através do ficheiro connection.php ?>
     <?php include('includes/linkscss.php') ?>
     <style>
     body {
