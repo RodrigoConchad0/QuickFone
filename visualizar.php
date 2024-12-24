@@ -65,7 +65,7 @@
                             <td>{$row['contato_preferido']}</td>
                             <td>{$row['dispositivo']}</td>
                             <td>{$row['descricao_problemas']}</td>
-                            <td>{$row['preco']}€</td>
+                            <td>{$row['descricao_problemas']}</td>" . ($row['preco'] != null ? "<td>{$row['preco']}€</td>" : "<td></td>") . "
                             <td>
                                 <form method='POST' style='margin: 0;'>
                                     <input type='hidden' name='id' value='{$row['id']}'>
