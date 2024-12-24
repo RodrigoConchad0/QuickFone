@@ -12,9 +12,9 @@
 <header> 
 <?php
 // Define a URL base dinamicamente
-$base_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'] . "/quickFone-main/";
+$base_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'] . "/trabalho/";
 ?>
-<nav class="navbar navbar-expand-lg  fixed-top"  style="background-color: #40E0D0!important;">
+<nav class="navbar navbar-expand-lg  fixed-top"  style="background-color: #40E0D0!important;"> 
         <!-- Menu --->
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <nav class="navbar" style="margin-left: 15px">
