@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huawei</title>
-    <link rel="icon" type="image/png" href="../imagens/huawei.png">
+    <title>Document</title>
     <?php require('../includes/linkscss.php')?>
 </head>
 <body style="margin-top: 150px;">
@@ -14,7 +13,7 @@
 
         <!-- Botões de retroceder --->
         <div class="container mt-3 mb-5" style="margin-left: 0px;margin-top: -100px;">
-            <button style= "background-color: #40E0D0; color: black;" type="button" class="btn btn-secondary"><a href="../index.php" class="text-decoration-none text-dark"> Home </a></button>
+            <button style= "background-color: #40E0D0; color: black;" type="button" class="btn btn-secondary" onclick="history.back()">Home</button>
             <button style= "background-color: #40E0D0; color: black;" type="button" class="btn btn-secondary" >Huawei</button>
         </div>
     <!-- Imagem marca --->

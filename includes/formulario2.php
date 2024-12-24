@@ -30,7 +30,7 @@
                     </div>
                     <?php
                     // Verifica se o idmodelo está entre 34 e 74
-                    $modeloFinal = ($id >= 199 && $id <= 462) ? "Samsung $nomeModelo" : $nomeModelo;
+                    $modeloFinal = ($id >= 199 && $idmodelo <= 462) ? "Samsung $nomeModelo" : $nomeModelo;
                     ?>
 
                     <div class="mb-2">
