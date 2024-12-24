@@ -22,8 +22,8 @@ $base_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : 
                 <img src="<?= $base_url ?>imagens/logo.jpg" width="100" height="100" class="d-inline-block align-top" alt="">
                 </a>
             </nav>
-            <ul class="navbar-nav ms-auto mt-2 mt-lg-0" style="margin: 0 auto">
-            <li class="nav-item active" style="margin-right:130px ">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0" style="margin: 0 auto;">
+            <li class="nav-item active" style="margin-right:100px ">
                 <div style="margin-top: -10px; max-width: 30px; max-height: 30px;">
                 <a href="<?= $base_url ?>telemoveis/Iphone.php" class="nav-link text-center">
                 <img style="max-width: 30px; max-height: 30px;" class="img-fluid mb-1" src="<?= $base_url ?>imagens/apple.png" alt="APPLE" >

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickPhone</title>
     <?php require('includes/linkscss.php')?>
-   
+    <link rel="icon" type="image/png" href="imagens/logo.jpg">
 </head>
 <body style="margin-top: 150px;">
 

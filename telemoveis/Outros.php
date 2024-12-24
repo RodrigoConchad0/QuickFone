@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assistência Técnica</title>
+    
     <?php include('../includes/linkscss.php'); ?>
     <?php include('../includes/connection.php'); ?>
     <style>

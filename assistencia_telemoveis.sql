@@ -695,18 +695,18 @@ CREATE TABLE IF NOT EXISTS `formularios` (
   `preco` double DEFAULT NULL,
   `estado` enum('AGUARDA_CONTACTO','CONTACTADO','A_REPARAR','PRONTO') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT 'AGUARDA_CONTACTO',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- A despejar dados para tabela assistencia_telemoveis.formularios: ~8 rows (aproximadamente)
 INSERT INTO `formularios` (`id`, `nome_completo`, `telefone`, `email`, `contato_preferido`, `dispositivo`, `descricao_problemas`, `preco`, `estado`) VALUES
 	(28, 'Joaquim Lopes ', '923467589', 'bgjqwgduyhjhfjejnd@hsdxjhwhj', 'email', 'iphone 8', 'VidroEcra', 166.95, 'PRONTO'),
-	(30, 'afonso', '988676765', 'jjjd@hotmail.com', 'telefone', 'Oppo A58 X', 'CameraFrontal', 50, 'CONTACTADO'),
-	(32, 'Jorge Paredes', '936785223', 'jmbwalls@hotmail.com', 'telefone', 'Iphone X', 'bateria', 70, 'CONTACTADO'),
 	(33, 'Margarida Paredes', '925504510', 'marg@hotmail.com', 'email', 'S23 Ultra', 'Água nas colunas', NULL, 'PRONTO'),
-	(41, 'ultimo', '34534', 's@ds', 'email', 'S24 Ultra', 'VidroEcra', 321.95, 'AGUARDA_CONTACTO'),
-	(42, 'Catarina Lopes', '989898999', 'f@e', 'email', 'S24 Ultra', 'VidroEcra', 321.95, 'AGUARDA_CONTACTO'),
-	(43, 'Catarina Lopes', '989898999', 'f@e', 'email', 'S24 Ultra', 'VidroEcra', 321.95, 'AGUARDA_CONTACTO'),
-	(44, 'Duarte Paredes', '914198749', 'f@e', 'email', 'S24 Ultra', 'agua', NULL, 'AGUARDA_CONTACTO');
+	(41, 'ultimo', '34534', 's@ds', 'email', 'S24 Ultra', 'VidroEcra', 321.95, 'A_REPARAR'),
+	(42, 'Catarina Lopes', '989898999', 'f@e', 'email', 'S24 Ultra', 'VidroEcra', 321.95, 'CONTACTADO'),
+	(43, 'Catarina Lopes', '989898999', 'f@e', 'email', 'S24 Ultra', 'VidroEcra', 321.95, 'CONTACTADO'),
+	(44, 'Duarte Paredes', '914198749', 'f@e', 'email', 'S24 Ultra', 'agua', NULL, 'CONTACTADO'),
+	(45, 'rodrigo cochado', '922724010', 'rodrigofdgn@gmail.com', 'telefone', 'Samsung S24', 'bateria', 50, 'CONTACTADO'),
+	(46, 'rodrigo cochado', '927724010', 'rodrigo@gmail.com', 'telefone', 'Modelo não encontrado', 'ta complicado', NULL, 'A_REPARAR');
 
 -- A despejar estrutura para tabela assistencia_telemoveis.modelo
 DROP TABLE IF EXISTS `modelo`;
@@ -836,7 +836,7 @@ CREATE TABLE IF NOT EXISTS `valida_login` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- A despejar dados para tabela assistencia_telemoveis.valida_login: ~6 rows (aproximadamente)
+-- A despejar dados para tabela assistencia_telemoveis.valida_login: ~5 rows (aproximadamente)
 INSERT INTO `valida_login` (`id`, `username`, `password`) VALUES
 	(1, 'duarteparedes', 'admin'),
 	(2, 'rodrigoconchado', 'admin1'),

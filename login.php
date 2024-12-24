@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Administrativo</title>
+    <link rel="icon" type="image/png" href="imagens/logo.jpg">
     <?php require('includes/connection.php');?>
     <?php require('includes/linkscss.php') ?>
     <style>
@@ -34,7 +35,7 @@
 </head>
 <body>
 
-<?php require('includes/menu.php') ?>
+<?php require('includes/menu1.php') ?>
 
 <div class="login-container">
     <h3 class="text-center mb-4">Login de Administrador</h3>
