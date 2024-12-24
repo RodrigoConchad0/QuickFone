@@ -14,6 +14,12 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+
+-- A despejar estrutura da base de dados para assistencia_telemoveis
+DROP DATABASE IF EXISTS `assistencia_telemoveis`;
+CREATE DATABASE IF NOT EXISTS `assistencia_telemoveis` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `assistencia_telemoveis`;
+
 -- A despejar estrutura para tabela assistencia_telemoveis.componentes
 DROP TABLE IF EXISTS `componentes`;
 CREATE TABLE IF NOT EXISTS `componentes` (
@@ -695,18 +701,13 @@ CREATE TABLE IF NOT EXISTS `formularios` (
   `preco` double DEFAULT NULL,
   `estado` enum('AGUARDA_CONTACTO','CONTACTADO','A_REPARAR','PRONTO') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT 'AGUARDA_CONTACTO',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- A despejar dados para tabela assistencia_telemoveis.formularios: ~8 rows (aproximadamente)
+-- A despejar dados para tabela assistencia_telemoveis.formularios: ~3 rows (aproximadamente)
 INSERT INTO `formularios` (`id`, `nome_completo`, `telefone`, `email`, `contato_preferido`, `dispositivo`, `descricao_problemas`, `preco`, `estado`) VALUES
-	(28, 'Joaquim Lopes ', '923467589', 'bgjqwgduyhjhfjejnd@hsdxjhwhj', 'email', 'iphone 8', 'VidroEcra', 166.95, 'PRONTO'),
-	(33, 'Margarida Paredes', '925504510', 'marg@hotmail.com', 'email', 'S23 Ultra', 'Água nas colunas', NULL, 'PRONTO'),
-	(41, 'ultimo', '34534', 's@ds', 'email', 'S24 Ultra', 'VidroEcra', 321.95, 'A_REPARAR'),
-	(42, 'Catarina Lopes', '989898999', 'f@e', 'email', 'S24 Ultra', 'VidroEcra', 321.95, 'CONTACTADO'),
-	(43, 'Catarina Lopes', '989898999', 'f@e', 'email', 'S24 Ultra', 'VidroEcra', 321.95, 'CONTACTADO'),
-	(44, 'Duarte Paredes', '914198749', 'f@e', 'email', 'S24 Ultra', 'agua', NULL, 'CONTACTADO'),
-	(45, 'rodrigo cochado', '922724010', 'rodrigofdgn@gmail.com', 'telefone', 'Samsung S24', 'bateria', 50, 'CONTACTADO'),
-	(46, 'rodrigo cochado', '927724010', 'rodrigo@gmail.com', 'telefone', 'Modelo não encontrado', 'ta complicado', NULL, 'A_REPARAR');
+	(45, 'rodrigo cochado', '922724010', 'rodrigofdgn@gmail.com', 'telefone', 'Samsung S24', 'bateria', 50, 'PRONTO'),
+	(46, 'rodrigo cochado', '927724010', 'rodrigo@gmail.com', 'telefone', 'Modelo não encontrado', 'ta complicado', NULL, 'PRONTO'),
+	(50, 'catarina silva', '927724010', 'catarina@gmail.com', 'email', 'Iphone 8 Plus', 'nao funciona', NULL, 'PRONTO');
 
 -- A despejar estrutura para tabela assistencia_telemoveis.modelo
 DROP TABLE IF EXISTS `modelo`;
@@ -715,7 +716,7 @@ CREATE TABLE IF NOT EXISTS `modelo` (
   `nome` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- A despejar dados para tabela assistencia_telemoveis.modelo: ~109 rows (aproximadamente)
+-- A despejar dados para tabela assistencia_telemoveis.modelo: ~0 rows (aproximadamente)
 INSERT INTO `modelo` (`id`, `nome`) VALUES
 	(1, 'Iphone8'),
 	(2, 'Iphone8Plus'),
