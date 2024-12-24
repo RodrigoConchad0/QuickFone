@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php include('includes/linkscss.php') /* pode ser require */?>
+    <?php include('includes/linkscss.php')?>
     <style>
     body{
       background: url('imagens/background.jpg');
@@ -18,13 +18,13 @@
       background: white;
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      margin-top: 200px; /* Espaçamento do topo */
+      margin-top: 200px; 
     }
   </style>
 </head>
 <body>
 <?php require('includes/menu.php') ?>
-
+<!-- Form do login  -->
 <div class="login-container">
     <h3 class="text-center mb-4">Crie a Sua Conta</h3>
     <form id="loginForm">

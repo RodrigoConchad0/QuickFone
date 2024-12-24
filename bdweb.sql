@@ -14,7 +14,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- A despejar estrutura para tabela quickphone.componentes
+-- A despejar estrutura para tabela assistencia_telemoveis.componentes
 DROP TABLE IF EXISTS `componentes`;
 CREATE TABLE IF NOT EXISTS `componentes` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `componentes` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=780 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- A despejar dados para tabela quickphone.componentes: ~678 rows (aproximadamente)
+-- A despejar dados para tabela assistencia_telemoveis.componentes: ~654 rows (aproximadamente)
 INSERT INTO `componentes` (`id`, `idmodelo`, `tiporeparacao`, `preco`, `nome`) VALUES
 	(1, 1, 'bateria', 50, 'Oppo A58'),
 	(2, 1, 'CameraFrontal', 50, 'Oppo A58'),
@@ -682,43 +682,41 @@ INSERT INTO `componentes` (`id`, `idmodelo`, `tiporeparacao`, `preco`, `nome`) V
 	(695, 113, 'BotaoPower', 70.95, 'Enjoy 60X'),
 	(696, 113, 'ConectorCarga', 79.95, 'Enjoy 60X');
 
--- A despejar estrutura para tabela quickphone.formularios
+-- A despejar estrutura para tabela assistencia_telemoveis.formularios
 DROP TABLE IF EXISTS `formularios`;
 CREATE TABLE IF NOT EXISTS `formularios` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `nome_completo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `telefone` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `email` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `contato_preferido` enum('email','telefone') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `dispositivo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `descricao_problemas` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `nome_completo` varchar(255) NOT NULL,
+  `telefone` varchar(15) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `contato_preferido` enum('email','telefone') NOT NULL,
+  `dispositivo` varchar(255) DEFAULT NULL,
+  `descricao_problemas` text,
+  `preco` double DEFAULT NULL,
+  `estado` enum('AGUARDA_CONTACTO','CONTACTADO','A_REPARAR','PRONTO') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT 'AGUARDA_CONTACTO',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- A despejar dados para tabela quickphone.formularios: ~10 rows (aproximadamente)
-INSERT INTO `formularios` (`id`, `nome_completo`, `telefone`, `email`, `contato_preferido`, `dispositivo`, `descricao_problemas`) VALUES
-	(1, 'João Silva', '912345678', 'joao.silva@example.com', 'email', 'Laptop', 'Problema com a inicialização.'),
-	(2, 'Maria Costa', '913456789', 'maria.costa@example.com', 'telefone', 'Smartphone', 'Tela travada frequentemente.'),
-	(3, 'Pedro Fernandes', '914567890', 'pedro.fernandes@example.com', 'email', 'Tablet', 'Bateria descarregando rapidamente.'),
-	(4, 'Ana Oliveira', '915678901', 'ana.oliveira@example.com', 'telefone', 'Desktop', 'Erro ao abrir arquivos.'),
-	(5, 'Carlos Almeida', '916789012', 'carlos.almeida@example.com', 'email', 'Smartwatch', 'Sincronização falhando com o telefone.'),
-	(6, 'Beatriz Lopes', '917890123', 'beatriz.lopes@example.com', 'telefone', 'Laptop', 'Conexão Wi-Fi instável.'),
-	(7, 'Ricardo Santos', '918901234', 'ricardo.santos@example.com', 'email', 'Smartphone', 'Aplicativos fechando inesperadamente.'),
-	(8, 'Sofia Martins', '919012345', 'sofia.martins@example.com', 'telefone', 'Tablet', 'Tela sensível ao toque não responde.'),
-	(9, 'Luís Rodrigues', '910123456', 'luis.rodrigues@example.com', 'email', 'Desktop', 'Computador não liga.'),
-	(10, 'Helena Sousa', '911234567', 'helena.sousa@example.com', 'telefone', 'Smartwatch', 'Problemas no carregamento da bateria.'),
-	(21, 'asdasd', '979', 'sda@sa', 'telefone', 'iphone', '666');
+-- A despejar dados para tabela assistencia_telemoveis.formularios: ~8 rows (aproximadamente)
+INSERT INTO `formularios` (`id`, `nome_completo`, `telefone`, `email`, `contato_preferido`, `dispositivo`, `descricao_problemas`, `preco`, `estado`) VALUES
+	(28, 'Joaquim Lopes ', '923467589', 'bgjqwgduyhjhfjejnd@hsdxjhwhj', 'email', 'iphone 8', 'VidroEcra', 166.95, 'PRONTO'),
+	(30, 'afonso', '988676765', 'jjjd@hotmail.com', 'telefone', 'Oppo A58 X', 'CameraFrontal', 50, 'CONTACTADO'),
+	(32, 'Jorge Paredes', '936785223', 'jmbwalls@hotmail.com', 'telefone', 'Iphone X', 'bateria', 70, 'CONTACTADO'),
+	(33, 'Margarida Paredes', '925504510', 'marg@hotmail.com', 'email', 'S23 Ultra', 'Água nas colunas', NULL, 'PRONTO'),
+	(41, 'ultimo', '34534', 's@ds', 'email', 'S24 Ultra', 'VidroEcra', 321.95, 'AGUARDA_CONTACTO'),
+	(42, 'Catarina Lopes', '989898999', 'f@e', 'email', 'S24 Ultra', 'VidroEcra', 321.95, 'AGUARDA_CONTACTO'),
+	(43, 'Catarina Lopes', '989898999', 'f@e', 'email', 'S24 Ultra', 'VidroEcra', 321.95, 'AGUARDA_CONTACTO'),
+	(44, 'Duarte Paredes', '914198749', 'f@e', 'email', 'S24 Ultra', 'agua', NULL, 'AGUARDA_CONTACTO');
 
--- A despejar estrutura para tabela quickphone.modelo
+-- A despejar estrutura para tabela assistencia_telemoveis.modelo
 DROP TABLE IF EXISTS `modelo`;
 CREATE TABLE IF NOT EXISTS `modelo` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `Nome` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=114 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `id` int DEFAULT NULL,
+  `nome` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- A despejar dados para tabela quickphone.modelo: ~109 rows (aproximadamente)
-INSERT INTO `modelo` (`id`, `Nome`) VALUES
+-- A despejar dados para tabela assistencia_telemoveis.modelo: ~109 rows (aproximadamente)
+INSERT INTO `modelo` (`id`, `nome`) VALUES
 	(1, 'Iphone8'),
 	(2, 'Iphone8Plus'),
 	(3, 'IphoneX'),
@@ -829,18 +827,22 @@ INSERT INTO `modelo` (`id`, `Nome`) VALUES
 	(112, 'OR12'),
 	(113, 'OR12P');
 
--- A despejar estrutura para tabela quickphone.valida_login
+-- A despejar estrutura para tabela assistencia_telemoveis.valida_login
 DROP TABLE IF EXISTS `valida_login`;
 CREATE TABLE IF NOT EXISTS `valida_login` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- A despejar dados para tabela quickphone.valida_login: ~1 rows (aproximadamente)
+-- A despejar dados para tabela assistencia_telemoveis.valida_login: ~6 rows (aproximadamente)
 INSERT INTO `valida_login` (`id`, `username`, `password`) VALUES
-	(1, 'rodrigo', 'rodrigo');
+	(1, 'duarteparedes', 'admin'),
+	(2, 'rodrigoconchado', 'admin1'),
+	(5, 'user2', 'web'),
+	(6, 'user2345', 'web1'),
+	(7, 'user2345', 'web2');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

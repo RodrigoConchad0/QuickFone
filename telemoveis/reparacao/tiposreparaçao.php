@@ -141,19 +141,32 @@
     </style>
 </head>
 <body>
-    <?php require('../../includes/menu.php'); // Inclui o menu principal da página ?>
-    <?php include('../../includes/buscaid.php');  ?>
+    <?php require('../../includes/menu1.php');?>
+    <?php include('../../includes/buscaid.php');?>
+    <?php  
+            //Com o id obtem se a marca   
+            if($idmodelo>=1 && $idmodelo<=9 ) $nomeMode="Oppo";
+            if($idmodelo>=10 && $idmodelo<=32 ) $nomeMode="Apple";
+            if($idmodelo>=33 && $idmodelo<=74 ) $nomeMode="Samsung";
+            if($idmodelo>=75 && $idmodelo<=97 ) $nomeMode="Xiaomi";
+            if($idmodelo>=98 && $idmodelo<=113 ) $nomeMode="Huawei";
+     ?>
+
+    <!-- Botões de retroceder --->
+    <div style="margin-top:-60px;" class="container-fluid ">
+        <div class="d-flex align-items-center">
+            <div>
+                <button style="background-color: #40E0D0; color: black;" type="button" class="btn btn-secondary" onclick="window.location.href='../../index.php'">Home</button>
+                <button style="background-color: #40E0D0; color: black;" type="button" class="btn btn-secondary" onclick="history.back()"><?= htmlspecialchars($nomeMode); ?></button>
+                <button style="background-color: #40E0D0; color: black;" type="button" class="btn btn-secondary"><?= htmlspecialchars($nomeModelo); ?></button>
+            </div>
+       </div>
+    </div>
 
     <div class="container my-5">
         <!-- Coluna da esquerda -->
         <div class="esquerda">
-            
-           
-
-
-
-
-            <!-- Cartão para a reparação de Bateria -->
+            <!-- Reparação de Bateria -->
             <div class="cartao" style=""; onclick="atualizarDetalhes('Bateria', 'Troca de bateria e higienização do equipamento', '../../imagens/bateriasubs.png' ,<?=$idBateria?>)">
                 <img src="../../imagens/bateria.jpg" alt="Bateria">
                 <h5>Bateria</h5>
@@ -164,7 +177,7 @@
                 
             </div>
 
-            <!-- Cartão para a reparação da Câmara Frontal -->
+            <!-- Reparação da Câmara Frontal -->
             <div class="cartao" onclick="atualizarDetalhes('Câmara Frontal', 'Detalhes sobre a câmara frontal...', '../../imagens/camarafrt.png' ,<?=$idCameraFrontal?>)">
                 <img src="../../imagens/frontal.png" alt="Câmara Frontal">
                 <h5>Câmara Frontal</h5>
@@ -175,7 +188,7 @@
                 
             </div>
 
-            <!-- Cartão para a reparação da Câmara Traseira -->
+            <!-- Reparação da Câmara Traseira -->
             <div class="cartao" onclick="atualizarDetalhes('Câmara Traseira', 'Detalhes sobre a câmara traseira...', '../../imagens/camaratraseirapartida.jpg',<?=$idCameraTraseira?>)">
                 <img src="../../imagens/traseira.png" alt="Câmara Traseira">
                 <h5>Câmara Traseira</h5>
@@ -186,7 +199,7 @@
                 
             </div>
 
-            <!-- Cartão para a reparação de Vidro/Ecrã -->
+            <!-- Reparação de Vidro/Ecrã -->
             <div class="cartao" onclick="atualizarDetalhes('Vidro/Ecrã', 'Detalhes sobre o vidro/ecrã...', '../../imagens/telemovelpartido.png',<?=$idVidroEcra?>)">
                 <img src="../../imagens/ecra.jpg" alt="Vidro/Ecrã">
                 <h5>Vidro/Ecrã</h5>
@@ -197,7 +210,7 @@
                 
             </div>
 
-            <!-- Cartão para a reparação do Botão Power -->
+            <!-- Reparação do Botão Power -->
             <div class="cartao" onclick="atualizarDetalhes('Botão Power', 'Detalhes sobre o botão power...', '../../imagens/botao.png',<?=$idBotaoPower?>)">
                 <img src="../../imagens/power.jpg" alt="Botão Power">
                 <h5>Botão Power</h5>
@@ -208,7 +221,7 @@
                 
             </div>
 
-            <!-- Cartão para a reparação do Conector de Carga -->
+            <!-- Reparação do Conector de Carga -->
             <div class="cartao" onclick="atualizarDetalhes('Conector de Carga', 'Detalhes sobre o conector de carga...', '../../imagens/conectordecarga.jpg' , <?=$idConectorCarga?> )">
                 <img src="../../imagens/conector.png" alt="Conector de Carga">
                 <h5>Conector de Carga</h5>
@@ -220,21 +233,28 @@
             </div>
 
            
+            <!-- Outros --->
+            <a class="cartao" href="../outros.php?idmodelo=<?=$idmodelo ?>" style="text-decoration: none; color: inherit;">
+                <img src="../../imagens/procurar.png" alt="Vidro/Ecrã">
+                <h5 style="text-align: center;">outros</h5>
+            </a>
             
-                <a class="cartao" href="../outros.php?id=<?= $idmodelo ?>" style="text-decoration: none; color: inherit;">
-                    <img src="../../imagens/procurar.png" alt="Vidro/Ecrã">
-                    <h5 style="text-align: center;">outros</h5>
-                </a>
             
-            
+                <?php 
+                    if ($idmodelo >= 34 && $idmodelo <= 74) {
+                        $nomeModelo = "Samsung " . $nomeModelo;
+                    }
+                ?>
 
         </div>
-
         <!-- Coluna da direita -->
         <div class="direita" id="detalhes">
         <h1 class=" text-dark ;" style=" margin-bottom: 205px; background-color: #40E0D0; position: fixed-top; border: 2px solid rgb(0, 0, 0); padding: 5px 10px; margin: 0; "><?= htmlspecialchars($nomeModelo); ?></h1>
 
             <img src="../../imagens/telemovelpartido.png" alt="Detalhes"> 
+
+          
+
             <h5  id="titulo-detalhes">Detalhes</h5>
             
             <p id="texto-detalhes">Selecione uma opção para ver os detalhes.</p> 

@@ -1,9 +1,9 @@
 <?php
 // Conexão com a base de dados
-$host = 'localhost';
-$user = 'rd';
-$pass = 'rd';
-$db = 'quickphone';
+                $host = 'localhost';
+                $user = 'root';
+                $pass = '';
+                $db = 'assistencia_telemoveis';
 
 
 try {

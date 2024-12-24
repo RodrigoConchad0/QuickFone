@@ -1,8 +1,9 @@
+<!-- Coneção a base de dados --->
 <?php
                 $host = 'localhost';
-                $user = 'rd';
-                $pass = 'rd';
-                $db = 'quickphone';
+                $user = 'root';
+                $pass = '';
+                $db = 'assistencia_telemoveis';
 
                 $conn = new mysqli($host, $user, $pass, $db);
 

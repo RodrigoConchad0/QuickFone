@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php include('../includes/linkscss.php') ?>
+    <?php require('../includes/linkscss.php') ?>
    
 </head>
 <body style="margin-top: 150px;">
     <!-- Menu --->
     <?php require('../includes/menu.php') ?>
 
+        <!-- Botões de retroceder --->
         <div class="container mt-3 mb-5" style="margin-left: 0px;margin-top: -100px;">
             <button style= "background-color: #40E0D0; color: black;" type="button" class=" btn btn-secondary" onclick="history.back()">Home</button>
             <button style= "background-color: #40E0D0; color: black;" type="button" class=" btn btn-secondary" >Apple</button>
         </div>
 
-
+    <!-- Imagem marca --->
     <div style=" margin-top: -50px; font-size: 40px; text-align: center;" class=" text-black p-3 fixed-top;">
-    <img style=" margin-bottom: 100px; max-width: 80px; max-height: 80px;" class="img-fluid mb-1" src="../imagens/apple.png" alt="APPLE" >
-        
+    <img style=" margin-bottom: 100px; max-width: 80px; max-height: 80px;" class="img-fluid mb-1" src="../imagens/apple.png" alt="APPLE" > 
     </div>
     
-
+    <!-- Modelos --->
     <div class="container text-center" style=" margin-top:-30px; margin-bottom: 150px;">
         <div class="row">
            

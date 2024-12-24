@@ -6,6 +6,7 @@
         
      }
     
+    
 
 </style>
 <header> 
@@ -13,15 +14,18 @@
 // Define a URL base dinamicamente
 $base_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'] . "/trabalho/";
 ?>
-
 <nav class="navbar navbar-expand-lg  fixed-top"  style="background-color: #40E0D0!important;">
-         <!-- Menu --->
+        <!-- Menu --->
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <nav class="navbar" style="margin-left: 15px">
+                <div>
                 <a class="navbar-brand" href="<?= $base_url ?>index.php">
                 <img src="<?= $base_url ?>imagens/logo.jpg" width="100" height="100" class="d-inline-block align-top" alt="">
                 </a>
+                </div>
             </nav>
+            
+            
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0" style="margin: 0 auto">
             <li class="nav-item active" style="margin-right:130px ">
                 <div style="margin-top: -10px; max-width: 30px; max-height: 30px;">
@@ -59,9 +63,6 @@ $base_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : 
             </div>
             </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0 ms-auto justify-content-center" role="search" onsubmit="pesquisar(event)" style="margin-right:100px">
-                <input id="barraPesquisa" class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-            </form>
             <a href="<?= $base_url ?>/login.php">
                 <button type="button" class="btn ms-auto">
                     <i class="bi bi-lock"></i>
@@ -70,7 +71,7 @@ $base_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : 
         </div>
 
 
-        <!-- Menu reponsivo --->
+        <!-- Menu responsivo --->
         <div class="pos-f-t">
         <div class="collapse" id="navbarToggleExternalContent">
             <div class="p-4 justify-content-center align-items-center text-center">
@@ -79,9 +80,7 @@ $base_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : 
                 <img src="<?= $base_url ?>imagens/logo.jpg" width="100" height="100" class="d-inline-block align-top" alt="">
                 </a>
             </nav>
-            <form class="form-inline my-2 my-lg-0 ms-auto justify-content-center" role="search" onsubmit="pesquisar(event)">
-                <input id="barraPesquisa" class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-            </form>
+            
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
                 <a href="<?= $base_url ?>telemoveis/Iphone.php" class="nav-link">Iphone</a>
@@ -120,7 +119,7 @@ $base_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : 
         // Remove acentos, converte para minúsculas e remove espaços extras
         return texto
             .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "")
+            .replace(/[\u0300-\u036f]/g, "") 
             .toLowerCase()
             .replace(/\s+/g, " "); 
     }
@@ -148,16 +147,14 @@ $base_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : 
         const bodyContent = document.body;
         let encontrado = false;
 
-
         const walker = document.createTreeWalker(bodyContent, NodeFilter.SHOW_TEXT, null, false);
         while (walker.nextNode()) {
-            
             const node = walker.currentNode;
             const textoNormalizado = normalizarTexto(node.textContent);
 
             if (textoNormalizado.includes(termoNormalizado)) {
                 encontrado = true;
-                
+
                 // Substituir o texto pelo destaque
                 const parent = node.parentNode;
                 const regex = new RegExp(termoNormalizado, "gi");

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php require('includes/connection.php'); // Liga a página à base de dados através do ficheiro connection.php ?>
-    <?php include('includes/linkscss.php') ?>
+    <?php require('includes/connection.php');?>
+    <?php require('includes/linkscss.php') ?>
     <style>
     body {
         background: url('imagens/background.jpg');
@@ -19,12 +19,12 @@
         background: white;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        margin-top: 200px; /* Espaçamento do topo */
+        margin-top: 200px; 
     }
 
     .alert-custom {
-        background-color: #f8d7da; /* Cor de fundo vermelho claro */
-        color: #721c24; /* Cor do texto vermelho escuro */
+        background-color: #f8d7da; 
+        color: #721c24; 
         padding: 15px;
         margin-bottom: 20px;
         border-radius: 5px;
@@ -45,7 +45,7 @@
         <strong>Permissão Negada!</strong> User Admin ou password inválidos.
     </div>
     <?php endif; ?>
-
+    <!-- Form do login  -->
     <form method="POST" action="processa_login.php">
         <div class="mb-3">
             <label for="username" class="form-label">User Admin</label>

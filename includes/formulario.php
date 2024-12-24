@@ -1,6 +1,7 @@
 <div class="container">
         <div class="row">
             <div class="col col-sm-10 col-lg-8 offset-sm-1 offset-lg-2">
+                
                 <!-- Formulário de envio de informações -->
                 <form action="" method="POST">
                     <div class="mb-2">
@@ -9,10 +10,12 @@
                         class="form-control" placeholder="Insira o seu nome completo" required>
                     </div>
                     <div class="mb-2">
-                        <label class="form-label" for="#f-telefone">Número de Telefone</label>
+                        <label class="form-label" for="f-telefone">Número de Telefone</label>
                         <input type="tel" name="fTelefone" id="f-telefone"
-                        class="form-control" placeholder="Insira o seu número de telefone" required>
+                            class="form-control" placeholder="Insira o seu número de telefone"
+                            required pattern="[0-9]{9}" title="formato incorreto">
                     </div>
+
                     <div class="mb-2">
                         <label class="form-label" for="#f-email">Endereço de Email</label>
                         <input type="email" name="fEmail" id="f-email"

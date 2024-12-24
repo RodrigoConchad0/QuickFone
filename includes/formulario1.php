@@ -9,10 +9,12 @@
                         class="form-control" placeholder="Insira o seu nome completo" required>
                     </div>
                     <div class="mb-2">
-                        <label class="form-label" for="#f-telefone">Número de Telefone</label>
+                        <label class="form-label" for="f-telefone">Número de Telefone</label>
                         <input type="tel" name="fTelefone" id="f-telefone"
-                        class="form-control" placeholder="Insira o seu número de telefone" required>
+                            class="form-control" placeholder="Insira o seu número de telefone"
+                            required pattern="[0-9]{9}" title="formato incorreto">
                     </div>
+
                     <div class="mb-2">
                         <label class="form-label" for="#f-email">Endereço de Email</label>
                         <input type="email" name="fEmail" id="f-email"
@@ -25,9 +27,15 @@
                             <option value="telefone">Telefone</option>
                         </select>
                     </div>
+
+                    <?php
+                    // Verifica se o idmodelo está entre 34 e 74
+                    $modeloFinal = ($idmodelo >= 34 && $idmodelo <= 74) ? "Samsung $nomeModelo" : $nomeModelo;
+                    ?>
+                    
                     <div class="mb-2">
                         <label class="form-label">Modelo:</label>
-                        <input type="text" class="form-control font-weight-bold" value="<?=$nomeModelo;?>" readonly style="background-color:rgb(210, 230, 250); color: #007bff ;font-weight: bold;">
+                        <input type="text" class="form-control font-weight-bold" value="<?=$modeloFinal;?>" readonly style="background-color:rgb(210, 230, 250); color: #007bff ;font-weight: bold;">
                     </div>
 
                     <div class="mb-2">

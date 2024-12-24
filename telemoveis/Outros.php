@@ -41,31 +41,32 @@
 </head>
 <body style="margin-top: 100px;">
     <!-- Menu -->
-    <?php require('../includes/menu.php'); 
-    include('../includes/buscaid.php');
+    <?php require('../includes/menu1.php'); 
+    require('../includes/buscaid.php');
     $nomeModelo = obterNomeModelo($conn, $idmodelo);
     ?>
    
 
 
-    <div class="alert alert-info text-center">
-        <strong>Descreve bem o teu dispositivo e o problema referente a ele.</strong>
+    <div style="margin-top:190px;" class="alert alert-info text-center">
+        <strong>Preenche corretamente o formulário </strong>
         <br>
-        Um técnico especializado irá consultar o teu pedido e receberás um email com o orçamento 
+        Um técnico especializado irá consultar o teu pedido e serás contactado
         <br>
-        e com todas as informações que tens de seguir se quiseres realizar a reparação.
+        para procedermos com a reparação.
     </div>
     
     <?php
     if ($idmodelo) {
-        include('../includes/formulario1.php');
+        require('../includes/formulario1.php');
     } else {
-        include('../includes/formulario.php');
+        require('../includes/formulario.php');
     }
+    
         ?>
 
 
-                <!-- mensagens de sucesso ou erro -->
+                <!-- Envio dos dados para a base de dados --->
                 <?php
                 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     

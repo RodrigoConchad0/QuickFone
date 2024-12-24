@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assistência Técnica</title>
     <?php 
-        include('../includes/linkscss.php'); 
+        require('../includes/linkscss.php'); 
           
-        include('../includes/connection.php'); 
+        require('../includes/connection.php'); 
         
         ?>
     
@@ -48,8 +48,9 @@
 </head>
 <body style="margin-top: 100px;">
 
+    <!-- Obter nome, preço e reparacao --->
     <?php 
-    include('../includes/buscaid.php');
+    require('../includes/buscaid.php');
     
     
         $nomeModelo = obterNomeModelo1($conn, $id);
@@ -58,21 +59,21 @@
     ?> 
 
     <!-- Menu -->
-    <?php require('../includes/menu.php'); ?>
+    <?php require('../includes/menu1.php'); ?>
 
 
 
-    <div class="alert alert-info text-center">
-        <strong>refere o nome do dispositivo que selecionaste anteriormente e a peça que desejas alterar.</strong>
+    <div style="margin-top:190px;" class="alert alert-info text-center">
+        <strong>Preenche corretamente o formulário </strong>
         <br>
-        Um técnico especializado irá consultar o teu pedido e serás contactado para prosseguirmos com a reparação
+        Um técnico especializado irá consultar o teu pedido e serás contactado
         <br>
-       
+        para procedermos com a reparação.
     </div>
 
-    <?php include('../includes/formulario2.php'); ?>
+    <?php require('../includes/formulario2.php'); ?>
 
-                <!-- mensagens de sucesso ou erro -->
+                <!-- Envio dos dados para a base de dados --->
                 <?php
                 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     
@@ -83,6 +84,7 @@
                     $dispositivo = $nomeModelo;;
                     $descricao = $tipoReparacao;
                     $preço = $precoReparacao;
+                    
 
 
                     

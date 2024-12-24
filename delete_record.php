@@ -1,9 +1,9 @@
 <?php
 // Conexão com a base de dados
-$host = 'localhost';
-$user = 'rd';
-$pass = 'rd';
-$db = 'quickphone';
+                $host = 'localhost';
+                $user = 'root';
+                $pass = '';
+                $db = 'assistencia_telemoveis';
 
 $conn = new mysqli($host, $user, $pass, $db);
 
@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 
 // Verificar se o ID foi passado
 if (isset($_GET['id'])) {
-    $id = intval($_GET['id']); // Garantir que o ID é um número inteiro
+    $id = intval($_GET['id']); 
 
     // Excluir da base de dados
     $sql = "DELETE FROM formularios WHERE id = $id";
