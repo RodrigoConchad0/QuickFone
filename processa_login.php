@@ -1,8 +1,8 @@
 <?php
 // Conexão com a base de dados
                 $host = 'localhost';
-                $user = 'root';
-                $pass = '';
+                $user = 'web';
+                $pass = 'web';
                 $db = 'assistencia_telemoveis';
 
 

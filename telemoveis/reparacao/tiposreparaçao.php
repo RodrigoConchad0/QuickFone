@@ -1,4 +1,4 @@
-<?php require('../../includes/connection.php'); // Liga a página à base de dados através do ficheiro connection.php ?>
+<?php require('../../includes/connection.php');?>
 
 <!DOCTYPE html>
 <html lang="pt">
@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reparações Telemóvel</title>
-    <?php include('../../includes/linkscss.php'); // Inclui os ficheiros CSS necessários ?>
+    <?php include('../../includes/linkscss.php');?>
     
     <style>
         /* Adiciona espaçamento entre o menu e as divs */

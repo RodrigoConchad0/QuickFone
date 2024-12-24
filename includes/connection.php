@@ -1,8 +1,8 @@
 <!-- Coneção a base de dados --->
 <?php
                 $host = 'localhost';
-                $user = 'root';
-                $pass = '';
+                $user = 'web';
+                $pass = 'web';
                 $db = 'assistencia_telemoveis';
 
                 $conn = new mysqli($host, $user, $pass, $db);
