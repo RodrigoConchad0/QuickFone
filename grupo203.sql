@@ -15,13 +15,11 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
--- A despejar estrutura da base de dados para assistencia_telemoveis
-DROP DATABASE IF EXISTS `assistencia_telemoveis`;
-CREATE DATABASE IF NOT EXISTS `assistencia_telemoveis` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `assistencia_telemoveis`;
+-- A despejar estrutura da base de dados para grupo203
+CREATE DATABASE IF NOT EXISTS `grupo203` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `grupo203`;
 
--- A despejar estrutura para tabela assistencia_telemoveis.componentes
-DROP TABLE IF EXISTS `componentes`;
+-- A despejar estrutura para tabela grupo203.componentes
 CREATE TABLE IF NOT EXISTS `componentes` (
   `id` int NOT NULL AUTO_INCREMENT,
   `idmodelo` int DEFAULT NULL,
@@ -31,7 +29,7 @@ CREATE TABLE IF NOT EXISTS `componentes` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=780 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- A despejar dados para tabela assistencia_telemoveis.componentes: ~654 rows (aproximadamente)
+-- A despejar dados para tabela grupo203.componentes: ~654 rows (aproximadamente)
 INSERT INTO `componentes` (`id`, `idmodelo`, `tiporeparacao`, `preco`, `nome`) VALUES
 	(1, 1, 'bateria', 50, 'Oppo A58'),
 	(2, 1, 'CameraFrontal', 50, 'Oppo A58'),
@@ -688,8 +686,7 @@ INSERT INTO `componentes` (`id`, `idmodelo`, `tiporeparacao`, `preco`, `nome`) V
 	(695, 113, 'BotaoPower', 70.95, 'Enjoy 60X'),
 	(696, 113, 'ConectorCarga', 79.95, 'Enjoy 60X');
 
--- A despejar estrutura para tabela assistencia_telemoveis.formularios
-DROP TABLE IF EXISTS `formularios`;
+-- A despejar estrutura para tabela grupo203.formularios
 CREATE TABLE IF NOT EXISTS `formularios` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nome_completo` varchar(255) NOT NULL,
@@ -703,14 +700,13 @@ CREATE TABLE IF NOT EXISTS `formularios` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- A despejar dados para tabela assistencia_telemoveis.formularios: ~3 rows (aproximadamente)
+-- A despejar dados para tabela grupo203.formularios: ~3 rows (aproximadamente)
 INSERT INTO `formularios` (`id`, `nome_completo`, `telefone`, `email`, `contato_preferido`, `dispositivo`, `descricao_problemas`, `preco`, `estado`) VALUES
 	(45, 'rodrigo cochado', '922724010', 'rodrigofdgn@gmail.com', 'telefone', 'Samsung S24', 'bateria', 50, 'PRONTO'),
 	(46, 'rodrigo cochado', '927724010', 'rodrigo@gmail.com', 'telefone', 'Modelo não encontrado', 'ta complicado', NULL, 'PRONTO'),
 	(50, 'catarina silva', '927724010', 'catarina@gmail.com', 'email', 'Iphone 8 Plus', 'nao funciona', NULL, 'PRONTO');
 
--- A despejar estrutura para tabela assistencia_telemoveis.valida_login
-DROP TABLE IF EXISTS `valida_login`;
+-- A despejar estrutura para tabela grupo203.valida_login
 CREATE TABLE IF NOT EXISTS `valida_login` (
   `id` int NOT NULL AUTO_INCREMENT,
   `username` varchar(50) NOT NULL,
@@ -718,7 +714,7 @@ CREATE TABLE IF NOT EXISTS `valida_login` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- A despejar dados para tabela assistencia_telemoveis.valida_login: ~5 rows (aproximadamente)
+-- A despejar dados para tabela grupo203.valida_login: ~5 rows (aproximadamente)
 INSERT INTO `valida_login` (`id`, `username`, `password`) VALUES
 	(1, 'duarteparedes', 'admin'),
 	(2, 'rodrigoconchado', 'admin1'),

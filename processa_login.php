@@ -1,9 +1,9 @@
 <?php
 // Conexão com a base de dados
                 $host = 'localhost';
-                $user = 'root';
-                $pass = '';
-                $db = 'assistencia_telemoveis';
+                $user = 'web';
+                $pass = 'web';
+                $db = 'grupo203';
 
 
 try {

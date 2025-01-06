@@ -8,137 +8,7 @@
     <title>Reparações Telemóvel</title>
     <?php include('../../includes/linkscss.php'); // Inclui os ficheiros CSS necessários ?>
     
-    <style>
-        /* Adiciona espaçamento entre o menu e as divs */
-        body {
-            margin-top: 200px;
-        }
-
-        /* Configuração da disposição dos elementos da página */
-        .container {
-            display: flex;
-            gap: 50px;
-        }
-
-        .esquerda {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .cartao {
-            flex: 1 1 calc(33.333% - 20px);
-            max-width: calc(33.333% - 20px);
-            height: 250px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-            background-color: white;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-            margin: 10px;
-        }
-
-        .cartao:hover {
-            transform: translateY(-5px);
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .cartao img {
-            max-width: 120px;
-            max-height: 120px;
-            margin-bottom: 10px;
-        }
-
-        .direita {
-            width: 33%;
-            height: 45%;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: fixed;
-            top: 200px;
-            right: 20px;
-            background-color: white;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        .direita img {
-            justify-content: center;
-            width: auto;
-            height: auto;
-            margin-bottom: 10px;
-            max-width: 200px;
-            max-height: 200px;
-        }
-        .direita h1 {
-            font-size: 15px; 
-        }
-
-        .direita h5 {
-            font-size: 15px; 
-        }
-
-        .direita p {
-            
-            font-size: 15px; 
-        }
-
-        .direita button {
-            
-            font-size: 15px; 
-        }
-
-        @media (max-width: 768px) {
-            /* Configurações para dispositivos móveis */
-            .cartao {
-                flex: 1 1 100%;
-                max-width: 100%;
-            }
-
-            .direita {
-                font-size: 20px;
-                width: 100%;
-                height: 250px;
-                right: 0;
-                box-shadow: none;
-                background-color: rgb(159, 206, 206, 1);
-                z-index: 1000;
-                margin-top:100px;
-            }
-
-            .direita img {
-                width: 25%;
-                height: 55%;
-            }
-
-        .direita h1 {
-            font-size: 10px; 
-        }
-
-        .direita h5 {
-            font-size: 10px; 
-        }
-
-        .direita p {
-            font-size: 10px; 
-        }
-
-        .direita button {
-            font-size: 10px; 
-        }
-            
-
-            
-        }
-    </style>
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
     <?php require('../../includes/menu1.php');?>
@@ -178,7 +48,7 @@
             </div>
 
             <!-- Reparação da Câmara Frontal -->
-            <div class="cartao" onclick="atualizarDetalhes('Câmara Frontal', 'Detalhes sobre a câmara frontal...', '../../imagens/camarafrt.png' ,<?=$idCameraFrontal?>)">
+            <div class="cartao" onclick="atualizarDetalhes('Câmara Frontal', 'Troca da câmara frontal e higienização do equipamento', '../../imagens/camarafrt.png' ,<?=$idCameraFrontal?>)">
                 <img src="../../imagens/frontal.png" alt="Câmara Frontal">
                 <h5>Câmara Frontal</h5>
                 
@@ -189,7 +59,7 @@
             </div>
 
             <!-- Reparação da Câmara Traseira -->
-            <div class="cartao" onclick="atualizarDetalhes('Câmara Traseira', 'Detalhes sobre a câmara traseira...', '../../imagens/camaratraseirapartida.jpg',<?=$idCameraTraseira?>)">
+            <div class="cartao" onclick="atualizarDetalhes('Câmara Traseira', 'Troca da câmara traseira e higienização do equipamento', '../../imagens/camaratraseirapartida.jpg',<?=$idCameraTraseira?>)">
                 <img src="../../imagens/traseira.png" alt="Câmara Traseira">
                 <h5>Câmara Traseira</h5>
                 
@@ -200,7 +70,7 @@
             </div>
 
             <!-- Reparação de Vidro/Ecrã -->
-            <div class="cartao" onclick="atualizarDetalhes('Vidro/Ecrã', 'Detalhes sobre o vidro/ecrã...', '../../imagens/telemovelpartido.png',<?=$idVidroEcra?>)">
+            <div class="cartao" onclick="atualizarDetalhes('Vidro/Ecrã', 'Troca do Vidro/Ecrã e higienização do equipamento', '../../imagens/telemovelpartido.png',<?=$idVidroEcra?>)">
                 <img src="../../imagens/ecra.jpg" alt="Vidro/Ecrã">
                 <h5>Vidro/Ecrã</h5>
                 
@@ -211,7 +81,7 @@
             </div>
 
             <!-- Reparação do Botão Power -->
-            <div class="cartao" onclick="atualizarDetalhes('Botão Power', 'Detalhes sobre o botão power...', '../../imagens/botao.png',<?=$idBotaoPower?>)">
+            <div class="cartao" onclick="atualizarDetalhes('Botão Power', 'Troca do Botão Power e higienização do equipamento', '../../imagens/botao.png',<?=$idBotaoPower?>)">
                 <img src="../../imagens/power.jpg" alt="Botão Power">
                 <h5>Botão Power</h5>
                 
@@ -222,7 +92,7 @@
             </div>
 
             <!-- Reparação do Conector de Carga -->
-            <div class="cartao" onclick="atualizarDetalhes('Conector de Carga', 'Detalhes sobre o conector de carga...', '../../imagens/conectordecarga.jpg' , <?=$idConectorCarga?> )">
+            <div class="cartao" onclick="atualizarDetalhes('Conector de Carga', 'Troca do Conector de Carga e higienização do equipamento', '../../imagens/conectordecarga.jpg' , <?=$idConectorCarga?> )">
                 <img src="../../imagens/conector.png" alt="Conector de Carga">
                 <h5>Conector de Carga</h5>
                 
