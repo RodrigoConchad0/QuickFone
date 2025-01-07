@@ -113,8 +113,10 @@
 
     <br><br><br><br>
 
-    <!-- Rodapé -->
-    <?php require('../includes/rodape.php'); ?>
+<!-- Rodapé -->
+<?php require('../includes/rodape.php'); ?>
+
+<script src="../js/menuresponsivo.js"></script>
 
 </body>
 </html>

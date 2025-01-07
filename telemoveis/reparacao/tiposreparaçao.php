@@ -171,6 +171,7 @@
                  window.addEventListener('resize', verificarScroll);
     </script>
 
-    <?php require('../../includes/rodape.php'); ?> €
+<?php require('../../includes/rodape.php'); ?> 
+<script src="../../js/menuresponsivo.js"></script>
  </body>
 </html>

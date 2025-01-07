@@ -22,7 +22,7 @@
     <!-- Texto  -->
     <div class="container text-center mt-5">
         <div class="p-4 bg-white rounded shadow-sm">
-            <h1 class="custom-font " style=" color: rgba(74, 68, 105, 0.8); text-color:rgba(180, 230, 238, 0.8); font-size: 1.5rem;">Necessita de raparar o seu dispostivo?</h1>
+            <h1 class="custom-font " style=" color: rgba(74, 68, 105, 0.8); text-color:rgba(180, 230, 238, 0.8); font-size: 1.5rem;">Necessita de reparar o seu dispostivo?</h1>
             <h1 class="custom-font " style="color:rgb(180, 202, 243) ;  font-size: 2.5rem;">Indique a marca</h1>
         </div>
      </div>
@@ -81,6 +81,8 @@
 
 <!-- Rodape -->
 <?php require('includes/rodape.php') ?>
+
+<script src="js/menuresponsivo.js"></script>
 
 </body>
 </html>

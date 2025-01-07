@@ -66,8 +66,8 @@
     
 </div>
 
-<script src="js/bootstrap.bundle.min.js"></script>
-<script>
+<script src="js/bootstrap.bundle.min.js" src="js/menuresponsivo.js"> 
+
     const showPasswordButton = document.getElementById('showPassword');
     const passwordInput = document.querySelector('[name="password"]');
 

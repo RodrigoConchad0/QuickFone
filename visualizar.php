@@ -94,7 +94,7 @@
 
     <br><br><br><br>
 
-    <script>
+    <script src="js/menuresponsivo.js">
         // Função para confirmar a exclusão do pedido
         function confirmDelete(id) {
             const confirmAction = confirm("O pedido vai ser apagado, tem a certeza?");

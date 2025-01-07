@@ -468,5 +468,7 @@
 
     <!-- Rodape -->
 <?php require('../includes/rodape.php') ?>
+
+<script src="../js/modelos.js"></script>
 </body>
 </html>
