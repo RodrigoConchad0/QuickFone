@@ -35,7 +35,7 @@
 </head>
 <body>
 
-<?php require('includes/menu.php') ?>
+<?php require('includes/menu1.php') ?>
 
 <div class="login-container">
     <h3 class="text-center mb-4">Login de Administrador</h3>
