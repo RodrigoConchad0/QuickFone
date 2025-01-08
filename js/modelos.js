@@ -11,60 +11,48 @@ function pesquisar(event) {
     event.preventDefault(); // Impede o envio do formulário
 
     // Obtém o termo pesquisado
-    const termo = document.getElementById("barraPesquisa").value.trim();
+    const termo = document.getElementById("barraPesquisa").value.trim().toLowerCase();
     if (!termo) {
         alert("Por favor, insira um termo para pesquisar.");
         return;
     }
 
-    // Normaliza o termo para a pesquisa
-    const termoNormalizado = normalizarTexto(termo);
+    // Seleciona todos os telemóveis
+    const telemoveis = document.querySelectorAll(".col-md-4");
 
-    // Remove destaques anteriores
-    document.querySelectorAll("mark.highlight").forEach((highlight) => {
-        const parent = highlight.parentNode;
-        parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
+    // Remove todas as sombras existentes
+    document.querySelectorAll(".shadow-lg").forEach(shadow => shadow.remove());
+
+    let encontrado = false;
+    let visiveis = 0;
+
+    // Itera sobre os telemóveis e aplica o filtro
+    telemoveis.forEach(telemovel => {
+        const nome = telemovel.querySelector("h3").textContent.toLowerCase();
+        if (nome.includes(termo)) {
+            telemovel.style.display = "block"; // Mostra o telemóvel correspondente
+            encontrado = true;
+            visiveis++; // Incrementa o contador de telemóveis visíveis
+        } else {
+            telemovel.style.display = "none"; // Esconde os outros
+        }
     });
 
-    // Localiza o termo no documento
-    const bodyContent = document.body;
-    let encontrado = false;
-
-
-    const walker = document.createTreeWalker(bodyContent, NodeFilter.SHOW_TEXT, null, false);
-    while (walker.nextNode()) {
-        
-        const node = walker.currentNode;
-        const textoNormalizado = normalizarTexto(node.textContent);
-
-        if (textoNormalizado.includes(termoNormalizado)) {
-            encontrado = true;
-            
-            // Substituir o texto pelo destaque
-            const parent = node.parentNode;
-            const regex = new RegExp(termoNormalizado, "gi");
-            const newHTML = node.textContent.replace(
-                regex,
-                (match) => `<mark class="highlight">${match}</mark>`
-            );
-            const tempDiv = document.createElement("div");
-            tempDiv.innerHTML = newHTML;
-            while (tempDiv.firstChild) {
-                parent.insertBefore(tempDiv.firstChild, node);
-            }
-            parent.removeChild(node);
-        }
-    }
-
-    // Foca no primeiro destaque
-    const firstHighlight = document.querySelector("mark.highlight");
-    if (firstHighlight) {
-        firstHighlight.scrollIntoView({ behavior: "smooth", block: "center" });
-    } else {
+    if (!encontrado) {
         alert("Nenhum resultado encontrado.");
+        return;
     }
-}
 
+    // Adiciona sombras após cada grupo de 3 telemóveis visíveis
+    const telemoveisVisiveis = Array.from(telemoveis).filter(telemovel => telemovel.style.display === "block");
+    telemoveisVisiveis.forEach((telemovel, index) => {
+        if ((index + 1) % 3 === 0) {
+            const shadow = document.createElement("div");
+            shadow.className = "shadow-lg p-3 mb-5 bg-body-tertiary rounded";
+            telemovel.parentNode.insertBefore(shadow, telemovel.nextSibling);
+        }
+    });
+}
  //Menu responsivo
  document.addEventListener('DOMContentLoaded', function () {
     var collapseToggle = document.querySelector('[data-bs-toggle="collapse"]');

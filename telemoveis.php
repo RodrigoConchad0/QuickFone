@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-icons.min.css">
 </head>
-<body style="margin-top: 80px;">
+<body style="margin-top: 180px;">
 <!-- Menu --->
 <?php require('includes/menu.php') ?>
 
@@ -28,14 +28,16 @@
     $marca = $marcas[$id] ?? $marcas[1]; // Padrão para Oppo se o ID for inválido
     ?>
 
-    <!-- Botões de retroceder -->
-    <button style="background-color: #40E0D0; color: black;" type="button" class="btn btn-secondary" onclick="history.back()">Home</button>
-    <button style="background-color: #40E0D0; color: black;" type="button" class="btn btn-secondary"><?= $marca['nome']; ?></button>
-</div>
 
-<!-- Imagem da marca -->
-<div style=" text-align: center;" class="text-black p-3 fixed-top;">
-    <img style="  max-width: 130px; max-height: 130px;" class="img-fluid mb-1" src="imagens/<?= $marca['imagem']; ?>" alt="<?= $marca['alt']; ?>">    
+    <!-- Botões de retroceder -->
+    <a href="index.php" class="btn btn-secondary" style="background-color: #40E0D0; color: black;">Home</a>
+    <button style="background-color: #40E0D0; color: black;" type="button" class="btn btn-secondary"><?= $marca['nome']; ?></button>
+
+    <!-- Imagem da marca -->
+    <div style=" text-align: center;" class="text-black p-3 fixed-top;">
+        <img style="  max-width: 130px; max-height: 130px;" class="img-fluid mb-1" src="imagens/<?= $marca['imagem']; ?>" alt="<?= $marca['alt']; ?>">    
+    </div>
+
 </div>
 
 <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>
@@ -49,11 +51,11 @@
 
             // Define os intervalos com base no ID
             $intervalos = [
-                1 => [0, 9],
-                2 => [9, 32],
-                3 => [32, 74],
-                4 => [74, 96],
-                5 => [96, 114]
+                1 => [1, 9],
+                2 => [10, 32],
+                3 => [33, 74],
+                4 => [75, 97],
+                5 => [98, 113]
             ];
 
             // Determina os limites de intervalo com base no ID ou usa valores padrão
@@ -62,7 +64,7 @@
             $max = $intervalo[1];
 
             // Query para buscar os modelos e fotos da tabela componentes
-            $sql = "SELECT idmodelo, nome, imagem FROM componentes WHERE idmodelo > $min AND idmodelo <= $max ORDER BY idmodelo";
+            $sql = "SELECT idmodelo, nome, imagem FROM componentes WHERE idmodelo >= $min AND idmodelo <= $max ORDER BY idmodelo";
             $result = $conn->query($sql);
 
             // Array para rastrear os idmodelos já exibidos
