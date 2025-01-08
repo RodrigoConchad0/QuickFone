@@ -1,3 +1,5 @@
+
+<?php require('../includes/connection.php'); // Liga a página à base de dados através do ficheiro connection.php ?>
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -26,174 +28,54 @@
     </div>
 
     <!-- Modelos --->
-    <div class="container text-center" style=" margin-top:-30px; margin-bottom: 150px;">
-        <div class="row">
-       
-            
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=98" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/mate60pro.jpeg" alt="" style="width: 270px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Mate 60 Pro</h3>
+    <div class="container text-center" style="margin-top: -30px; margin-bottom: 150px;">
+    <div class="row">
+        <?php
+        // Query para buscar os modelos e fotos da tabela componentes
+        $sql = "SELECT idmodelo, nome, imagem FROM componentes WHERE idmodelo > 97 AND idmodelo < 114 ORDER BY idmodelo";
+        $result = $conn->query($sql);
+
+        // Array para rastrear os idmodelos já exibidos
+        $idmodelos_exibidos = [];
+        $contador = 0; // Inicializa o contador
+
+        // Verifica se há resultados
+        if ($result->num_rows > 0) {
+            // Loop para cada modelo
+            while ($row = $result->fetch_assoc()) {
+                $idmodelo = $row['idmodelo'];
+                $nome = $row['nome'];
+                $imagem = $row['imagem'];
+
+                // Verifica se o idmodelo já foi exibido
+                if (!in_array($idmodelo, $idmodelos_exibidos)) {
+                    // Adiciona o idmodelo ao array de exibidos
+                    $idmodelos_exibidos[] = $idmodelo;
+
+                    // Incrementa o contador
+                    $contador++;
+                    ?>
+                    <div class="col-md-4" style="margin-bottom: 50px;">
+                        <a href="reparacao/tiposreparaçao.php?idmodelo=<?= $idmodelo; ?>" class="text-decoration-none" style="color: black;">
+                            <div class="service-item p-4" style="max-width: 500px; max-height: 500px; width: 100%; height: 100%;">
+                                <img class="img-fluid mb-1" src="../imagens/<?= $imagem; ?>" alt="<?= $nome; ?>" style="width: 225px; height: 300px;">
+                                <h3 class="h6 text-center mt-1"><?= $nome; ?></h3>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-           
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=99" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/mate60proplus.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Mate 60 Pro Plus</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=100" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/matex3.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Mate X3</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>
-            
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=101" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/matex5.jpg" alt="" style="width: 280px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Mate X5</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=102" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/nova10se.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Nova 10 SE</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=103" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/nova11.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Nova 11</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=104" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/nova11i.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Nova 11i</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=105" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/nova11pro.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Nova 11 Pro</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=106" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/novay91.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Nova y91</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=107" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/huaweimate60rs.jpg" alt="" style="width: 230px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Mate 60 RS</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=108" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/p60pro.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">P60 Pro</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=109" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/p60art.jpg" alt="" style="width: 280px; height: 320px;">
-                        <h3 class="h6 text-center mt-1">P60 Art</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=110" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/p60.jpg" alt="" style="width: 240px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">P60</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=111" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/p50pocket.jpg" alt="" style="width: 320px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">P50 Pocket</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=112" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/enjoy60.jpg" alt="" style="width: 260px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Enjoy 60</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=113" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/enjoy60x.jpg" alt="" style="width: 250px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Enjoy 60X</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4" style="margin-bottom: 50px;">
-                <a href="../telemoveis\Outros.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px;">
-                        <img class="img-fluid mb-1" src="../imagens\procurar.png" alt="Lupa" style="max-width: 300px; max-height: 300px;">
-                        <h3 class="h6 text-center mt-1">Outros</h3>
-                    </div>
-                </a>
-            </div>  
-
-        </div>
+                    <?php
+                    // Adiciona a sombra após cada 3 modelos
+                    if ($contador % 3 == 0) {
+                        echo '<div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>';
+                    }
+                }
+            }
+        } else {
+            // Mensagem caso não existam modelos
+            echo '<p class="text-center">Nenhum modelo encontrado.</p>';
+        }
+        ?>
+    </div>
 </div>
 
 

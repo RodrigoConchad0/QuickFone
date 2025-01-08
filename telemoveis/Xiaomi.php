@@ -1,3 +1,5 @@
+
+<?php require('../includes/connection.php'); // Liga a página à base de dados através do ficheiro connection.php ?>
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -25,243 +27,54 @@
     </div>
     
     <!-- Modelos --->
-    <div class="container text-center" style=" margin-top:-30px; margin-bottom: 150px;">
-        <div class="row">
-       
-            
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=75" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/xiomi14pro.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi 14 Pro</h3>
+    <div class="container text-center" style="margin-top: -30px; margin-bottom: 150px;">
+    <div class="row">
+        <?php
+        // Query para buscar os modelos e fotos da tabela componentes
+        $sql = "SELECT idmodelo, nome, imagem FROM componentes WHERE idmodelo > 74 AND idmodelo < 96 ORDER BY idmodelo";
+        $result = $conn->query($sql);
+
+        // Array para rastrear os idmodelos já exibidos
+        $idmodelos_exibidos = [];
+        $contador = 0; // Inicializa o contador
+
+        // Verifica se há resultados
+        if ($result->num_rows > 0) {
+            // Loop para cada modelo
+            while ($row = $result->fetch_assoc()) {
+                $idmodelo = $row['idmodelo'];
+                $nome = $row['nome'];
+                $imagem = $row['imagem'];
+
+                // Verifica se o idmodelo já foi exibido
+                if (!in_array($idmodelo, $idmodelos_exibidos)) {
+                    // Adiciona o idmodelo ao array de exibidos
+                    $idmodelos_exibidos[] = $idmodelo;
+
+                    // Incrementa o contador
+                    $contador++;
+                    ?>
+                    <div class="col-md-4" style="margin-bottom: 50px;">
+                        <a href="reparacao/tiposreparaçao.php?idmodelo=<?= $idmodelo; ?>" class="text-decoration-none" style="color: black;">
+                            <div class="service-item p-4" style="max-width: 500px; max-height: 500px; width: 100%; height: 100%;">
+                                <img class="img-fluid mb-1" src="../imagens/<?= $imagem; ?>" alt="<?= $nome; ?>" style="width: 225px; height: 300px;">
+                                <h3 class="h6 text-center mt-1"><?= $nome; ?></h3>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-           
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=76" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/xiomi14.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi 14</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=77" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/xiomi13.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi 13</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>
-            
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=78" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/xiomi13pro.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi 13 Pro</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=79" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/xiomi13proplus.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi 13 Pro Plus</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=80" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/xiomi13ultra.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi 13 Ultra</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=81" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/xiomi 12.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi 12</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=82" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/xiomi12t.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi 12T</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=83" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/xiomi12tpro.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi 12T Pro</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=84" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/xiomimi11.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi Mi 11</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=85" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/xiomimi11lite.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi Mi 11 Lite</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=86" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/xiomimi11ultra.jpg" alt="" style="width: 300px; height: 320px;">
-                        <h3 class="h6 text-center mt-1">Xiomi Mi 11 Ultra</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=87" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/xiomiredmi10.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi Redmi Note 10</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=88" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/xiomimi10.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi Mi 10</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px; margin-top: -25px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=89" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/xiomimi10ultra.jpg" alt="" style="width: 350px; height: 360px;">
-                        <h3 class="h6 text-center mt-1">Xiomi Mi 10 Ultra</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=90" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/xiomiredminote10pro.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi Redmi Note 10 Pro</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=91" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/redminote11.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi Redmi Note 11</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=92" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/redminote11pro.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi Redmi Note 11 Pro</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=93" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/redminote12.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi Redmi Note 12</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px; margin-top: -30px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=94" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/redminote12pro.jpg" alt="" style="width: 350px; height: 370px;">
-                        <h3 class="h6 text-center mt-1">Xiomi Redmi Note 12 Pro</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=95" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/redminote13.jpg" alt="" style="width: 250px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi Redmi Note 13</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=96" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens/redminote13pro.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi Redmi Note 13 Pro</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="reparacao\tiposreparaçao.php?idmodelo=97" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4 " style=" max-width: 500px; max-height: 500px; width:100%; height:100%">
-                        <img class="img-fluid mb-1" src="../imagens\redminote13proplus.jpg" alt="" style="width: 300px; height: 300px;">
-                        <h3 class="h6 text-center mt-1">Xiomi Redmi Note 13 Pro Plus</h3>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4" style="margin-bottom: 50px;">
-                <a href="../telemoveis\Outros.php" class="text-decoration-none" style="color: black;">
-                    <div class="service-item p-4" style=" max-width: 500px; max-height: 500px;">
-                        <img class="img-fluid mb-1" src="../imagens\procurar.png" alt="Lupa" style="max-width: 300px; max-height: 300px;">
-                        <h3 class="h6 text-center mt-1">Outros</h3>
-                    </div>
-                </a>
-            </div>
-
-            
-
-        </div>
+                    <?php
+                    // Adiciona a sombra após cada 3 modelos
+                    if ($contador % 3 == 0) {
+                        echo '<div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded"></div>';
+                    }
+                }
+            }
+        } else {
+            // Mensagem caso não existam modelos
+            echo '<p class="text-center">Nenhum modelo encontrado.</p>';
+        }
+        ?>
+    </div>
 </div>
 
 
