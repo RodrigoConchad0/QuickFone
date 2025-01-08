@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assistência Técnica</title>
-    <?php 
-        require('../includes/linkscss.php'); 
-          
-        require('../includes/connection.php'); 
-        
-        ?>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <?php
+        require('includes/connection.php'); 
+    ?>
     
 
 
@@ -50,7 +49,7 @@
 
     <!-- Obter nome, preço e reparacao --->
     <?php 
-    require('../includes/buscaid.php');
+    require('includes/buscaid.php');
     
     
         $nomeModelo = obterNomeModelo1($conn, $id);
@@ -59,7 +58,7 @@
     ?> 
 
     <!-- Menu -->
-    <?php require('../includes/menu1.php'); ?>
+    <?php require('includes/menu1.php'); ?>
 
 
 
@@ -71,7 +70,7 @@
         para procedermos com a reparação.
     </div>
 
-    <?php require('../includes/formulario2.php'); ?>
+    <?php require('includes/formulario2.php'); ?>
 
                 <!-- Envio dos dados para a base de dados --->
                 <?php
@@ -114,9 +113,9 @@
     <br><br><br><br>
 
 <!-- Rodapé -->
-<?php require('../includes/rodape.php'); ?>
+<?php require('includes/rodape.php'); ?>
 
-<script src="../js/menuresponsivo.js"></script>
+<script src="js/menuresponsivo.js"></script>
 
 </body>
 </html>

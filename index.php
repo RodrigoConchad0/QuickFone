@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickPhone</title>
-    <?php require('includes/linkscss.php')?>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
    
 </head>
 <body style="margin-top: 150px;">
@@ -34,42 +35,42 @@
        
             
             <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="telemoveis\Iphone.php" class="text-decoration-none" style="color: black;">
+                <a href="telemoveis.php?id=2" class="text-decoration-none" style="color: black;">
                     <img class="img-fluid mb-1" src="imagens/iphone15pro.jpg" alt="Iphone" style="max-width: 300px; max-height: 300px;">
                     <h3 class="h6 text-center mt-1">Iphone</h3>
                 </a>
             </div>
            
             <div class="col-md-4"  style="margin-bottom: 50px;">
-                <a href="telemoveis\Samsung.php" class="text-decoration-none" style="color: black;">
+                <a href="telemoveis.php?id=3" class="text-decoration-none" style="color: black;">
                     <img class="img-fluid mb-1" src="imagens/s21ultra.jpg" alt="Samsung" style="max-width: 300px; max-height: 300px;">
                     <h3 class="h6 text-center mt-1">Samsung</h3>
                 </a>
             </div>
             
             <div class="col-md-4" style="margin-bottom: 50px;">
-                <a href="telemoveis\Hawei.php" class="text-decoration-none" style="color: black;">
+                <a href="telemoveis.php?id=5" class="text-decoration-none" style="color: black;">
                         <img class="img-fluid mb-1" src="imagens/nova11i.jpg" alt="Hawei" style="max-width: 300px; max-height: 300px;">
                         <h3 class="h6 text-center mt-1">Huawei</h3>
                 </a>
             </div>
            
             <div class="col-md-4" style="margin-bottom: 50px;">
-                <a href="telemoveis\Xiaomi.php" class="text-decoration-none" style="color: black;">
+                <a href="telemoveis.php?id=4" class="text-decoration-none" style="color: black;">
                         <img class="img-fluid mb-1" src="imagens/xiomi14.jpg" alt="Xiomi" style="max-width: 300px; max-height: 300px;">
                         <h3 class="h6 text-center mt-1">Xiaomi</h3>
                 </a>
             </div>
             
             <div class="col-md-4" style="margin-bottom: 50px;">
-                <a href="telemoveis\Oppo.php" class="text-decoration-none" style="color: black;">
+                <a href="telemoveis.php?id=1" class="text-decoration-none" style="color: black;">
                         <img class="img-fluid mb-1" src="imagens/oppofindx6.jpg" alt="Oppo" style="max-width: 300px; max-height: 300px;">
                         <h3 class="h6 text-center mt-1">Oppo</h3>
                 </a>
             </div>
             
             <div class="col-md-4" style="margin-top:50px; margin-bottom: 50px;">
-                <a href="telemoveis\Outros.php" class="text-decoration-none" style="color: black;">
+                <a href="Outros.php" class="text-decoration-none" style="color: black;">
                         <img class="img-fluid mb-1" src="imagens\procurar.png" alt="Lupa" style="max-width: 200px; max-height: 200px;">
                         <h3 class="h6 text-center mt-1">Outros</h3>
                 </a>

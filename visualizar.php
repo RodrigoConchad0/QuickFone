@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title >Respostas do Formulário</title>
-    <?php include('includes/linkscss.php'); ?>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
 </head>
 <body>
 
@@ -46,8 +47,8 @@
                     <th>Contato Preferido</th>
                     <th>Dispositivo</th>
                     <th>Descrição dos Problemas</th>
-                    <th>Preço</th> 
                     <th>Estado</th> 
+                    <th>Preço</th> 
                     <th style="max-heigth">Ações</th> 
                 </tr>
             </thead>
@@ -94,7 +95,8 @@
 
     <br><br><br><br>
 
-    <script src="js/menuresponsivo.js">
+    <script src="js/menuresponsivo.js"></script>
+    <script>
         // Função para confirmar a exclusão do pedido
         function confirmDelete(id) {
             const confirmAction = confirm("O pedido vai ser apagado, tem a certeza?");

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assistência Técnica</title>
-    <?php include('../includes/linkscss.php'); ?>
-    <?php include('../includes/connection.php'); ?>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <?php include('includes/connection.php'); ?>
     <style>
         /* Ajusta a margem superior para que o texto fique visível, acima do menu */
         .alert-info {
@@ -41,8 +42,8 @@
 </head>
 <body style="margin-top: 100px;">
     <!-- Menu -->
-    <?php require('../includes/menu1.php'); 
-    require('../includes/buscaid.php');
+    <?php require('includes/menu1.php'); 
+    require('includes/buscaid.php');
     $nomeModelo = obterNomeModelo($conn, $idmodelo);
     ?>
    
@@ -58,9 +59,9 @@
     
     <?php
     if ($idmodelo) {
-        require('../includes/formulario1.php');
+        require('includes/formulario1.php');
     } else {
-        require('../includes/formulario.php');
+        require('includes/formulario.php');
     }
     
         ?>
@@ -104,9 +105,9 @@
     <br><br><br><br>
 
 <!-- Rodapé -->
-<?php require('../includes/rodape.php'); ?>
+<?php require('includes/rodape.php'); ?>
 
-<script src="../js/menuresponsivo.js"></script>
+<script src="js/menuresponsivo.js"></script>
 
 </body>
 </html>

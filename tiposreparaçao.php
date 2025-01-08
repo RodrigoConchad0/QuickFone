@@ -1,4 +1,4 @@
-<?php require('../../includes/connection.php'); // Liga a página à base de dados através do ficheiro connection.php ?>
+<?php require('includes/connection.php'); // Liga a página à base de dados através do ficheiro connection.php ?>
 
 <!DOCTYPE html>
 <html lang="pt">
@@ -6,13 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reparações Telemóvel</title>
-    <?php include('../../includes/linkscss.php'); // Inclui os ficheiros CSS necessários ?>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
     
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <?php require('../../includes/menu1.php');?>
-    <?php include('../../includes/buscaid.php');?>
+    <?php require('includes/menu1.php');?>
+    <?php include('includes/buscaid.php');?>
     <?php  
             //Com o id obtem se a marca   
             if($idmodelo>=1 && $idmodelo<=9 ) $nomeMode="Oppo";
@@ -26,7 +27,7 @@
     <div style="margin-top:-60px;" class="container-fluid ">
         <div class="d-flex align-items-center">
             <div>
-                <button style="background-color: #40E0D0; color: black;" type="button" class="btn btn-secondary" onclick="window.location.href='../../index.php'">Home</button>
+                <button style="background-color: #40E0D0; color: black;" type="button" class="btn btn-secondary" onclick="window.location.href='index.php'">Home</button>
                 <button style="background-color: #40E0D0; color: black;" type="button" class="btn btn-secondary" onclick="history.back()"><?= htmlspecialchars($nomeMode); ?></button>
                 <button style="background-color: #40E0D0; color: black;" type="button" class="btn btn-secondary"><?= htmlspecialchars($nomeModelo); ?></button>
             </div>
@@ -37,8 +38,8 @@
         <!-- Coluna da esquerda -->
         <div class="esquerda">
             <!-- Reparação de Bateria -->
-            <div class="cartao" style=""; onclick="atualizarDetalhes('Bateria', 'Troca de bateria e higienização do equipamento', '../../imagens/bateriasubs.png' ,<?=$idBateria?>)">
-                <img src="../../imagens/bateria.jpg" alt="Bateria">
+            <div class="cartao" style=""; onclick="atualizarDetalhes('Bateria', 'Troca de bateria e higienização do equipamento', 'imagens/bateriasubs.png' ,<?=$idBateria?>)">
+                <img src="imagens/bateria.jpg" alt="Bateria">
                 <h5>Bateria</h5>
                 
                 <button type="button" class="btn contact-button" style= "background-color: #40E0D0" data-bs-toggle="modal" data-bs-target="#meuModal2">
@@ -48,8 +49,8 @@
             </div>
 
             <!-- Reparação da Câmara Frontal -->
-            <div class="cartao" onclick="atualizarDetalhes('Câmara Frontal', 'Troca da câmara frontal e higienização do equipamento', '../../imagens/camarafrt.png' ,<?=$idCameraFrontal?>)">
-                <img src="../../imagens/frontal.png" alt="Câmara Frontal">
+            <div class="cartao" onclick="atualizarDetalhes('Câmara Frontal', 'Troca da câmara frontal e higienização do equipamento', 'imagens/camarafrt.png' ,<?=$idCameraFrontal?>)">
+                <img src="imagens/frontal.png" alt="Câmara Frontal">
                 <h5>Câmara Frontal</h5>
                 
                 <button type="button" class="btn contact-button" style= "background-color: #40E0D0" data-bs-toggle="modal" data-bs-target="#meuModal2">
@@ -59,8 +60,8 @@
             </div>
 
             <!-- Reparação da Câmara Traseira -->
-            <div class="cartao" onclick="atualizarDetalhes('Câmara Traseira', 'Troca da câmara traseira e higienização do equipamento', '../../imagens/camaratraseirapartida.jpg',<?=$idCameraTraseira?>)">
-                <img src="../../imagens/traseira.png" alt="Câmara Traseira">
+            <div class="cartao" onclick="atualizarDetalhes('Câmara Traseira', 'Troca da câmara traseira e higienização do equipamento', 'imagens/camaratraseirapartida.jpg',<?=$idCameraTraseira?>)">
+                <img src="imagens/traseira.png" alt="Câmara Traseira">
                 <h5>Câmara Traseira</h5>
                 
                 <button type="button" class="btn contact-button" style= "background-color: #40E0D0" data-bs-toggle="modal" data-bs-target="#meuModal2">
@@ -70,8 +71,8 @@
             </div>
 
             <!-- Reparação de Vidro/Ecrã -->
-            <div class="cartao" onclick="atualizarDetalhes('Vidro/Ecrã', 'Troca do Vidro/Ecrã e higienização do equipamento', '../../imagens/telemovelpartido.png',<?=$idVidroEcra?>)">
-                <img src="../../imagens/ecra.jpg" alt="Vidro/Ecrã">
+            <div class="cartao" onclick="atualizarDetalhes('Vidro/Ecrã', 'Troca do Vidro/Ecrã e higienização do equipamento', 'imagens/telemovelpartido.png',<?=$idVidroEcra?>)">
+                <img src="imagens/ecra.jpg" alt="Vidro/Ecrã">
                 <h5>Vidro/Ecrã</h5>
                 
                 <button type="button" class="btn contact-button" style= "background-color: #40E0D0" data-bs-toggle="modal" data-bs-target="#meuModal2">
@@ -81,8 +82,8 @@
             </div>
 
             <!-- Reparação do Botão Power -->
-            <div class="cartao" onclick="atualizarDetalhes('Botão Power', 'Troca do Botão Power e higienização do equipamento', '../../imagens/botao.png',<?=$idBotaoPower?>)">
-                <img src="../../imagens/power.jpg" alt="Botão Power">
+            <div class="cartao" onclick="atualizarDetalhes('Botão Power', 'Troca do Botão Power e higienização do equipamento', 'imagens/botao.png',<?=$idBotaoPower?>)">
+                <img src="imagens/power.jpg" alt="Botão Power">
                 <h5>Botão Power</h5>
                 
                 <button type="button" class="btn contact-button" style= "background-color: #40E0D0" data-bs-toggle="modal" data-bs-target="#meuModal2">
@@ -92,8 +93,8 @@
             </div>
 
             <!-- Reparação do Conector de Carga -->
-            <div class="cartao" onclick="atualizarDetalhes('Conector de Carga', 'Troca do Conector de Carga e higienização do equipamento', '../../imagens/conectordecarga.jpg' , <?=$idConectorCarga?> )">
-                <img src="../../imagens/conector.png" alt="Conector de Carga">
+            <div class="cartao" onclick="atualizarDetalhes('Conector de Carga', 'Troca do Conector de Carga e higienização do equipamento', 'imagens/conectordecarga.jpg' , <?=$idConectorCarga?> )">
+                <img src="imagens/conector.png" alt="Conector de Carga">
                 <h5>Conector de Carga</h5>
                 
                 <button type="button" class="btn contact-button" style= "background-color: #40E0D0" data-bs-toggle="modal" data-bs-target="#meuModal2">
@@ -104,8 +105,8 @@
 
            
             <!-- Outros --->
-            <a class="cartao" href="../outros.php?idmodelo=<?=$idmodelo ?>" style="text-decoration: none; color: inherit;">
-                <img src="../../imagens/procurar.png" alt="Vidro/Ecrã">
+            <a class="cartao" href="outros.php?idmodelo=<?=$idmodelo ?>" style="text-decoration: none; color: inherit;">
+                <img src="imagens/procurar.png" alt="Vidro/Ecrã">
                 <h5 style="text-align: center;">outros</h5>
             </a>
             
@@ -121,7 +122,7 @@
         <div class="direita" id="detalhes">
         <h1 class=" text-dark ;" style=" margin-bottom: 205px; background-color: #40E0D0; position: fixed-top; border: 2px solid rgb(0, 0, 0); padding: 5px 10px; margin: 0; "><?= htmlspecialchars($nomeModelo); ?></h1>
 
-            <img src="../../imagens/telemovelpartido.png" alt="Detalhes"> 
+            <img src="imagens/telemovelpartido.png" alt="Detalhes"> 
 
           
 
@@ -136,14 +137,16 @@
     </div>
     
 
-    <script>
-        
+
+<?php require('includes/rodape.php'); ?> 
+<script src="js/menuresponsivo.js"></script>
+<script>    
         function atualizarDetalhes(titulo, texto, imagem, id) {
             // Atualiza o conteúdo da div à direita
             document.getElementById('titulo-detalhes').innerText = titulo;
             document.getElementById('texto-detalhes').innerText = texto;
             document.querySelector('#detalhes img').src = imagem;
-            document.getElementById('link-reparar').href = `../Outros1.php?id=${id}`;
+            document.getElementById('link-reparar').href = `Outros1.php?id=${id}`;
         }
             // Seleciona a div da direita
             const detalhes = document.getElementById('detalhes');
@@ -170,8 +173,5 @@
                 verificarScroll();
                  window.addEventListener('resize', verificarScroll);
     </script>
-
-<?php require('../../includes/rodape.php'); ?> 
-<script src="../../js/menuresponsivo.js"></script>
  </body>
 </html>
